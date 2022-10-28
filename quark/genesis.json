@@ -1,6 +1,6 @@
 {
   "genesis_time": "2022-09-23T10:00:00.0Z",
-  "chain_id": "neutron-devnet-1",
+  "chain_id": "quark-1",
   "initial_height": "1",
   "consensus_params": {
     "block": {
