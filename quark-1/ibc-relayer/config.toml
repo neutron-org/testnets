@@ -102,7 +102,7 @@ key_name = 'neutron-ibc-relayer'
 store_prefix = 'ibc'
 default_gas = 5000000
 max_gas = 15000000
-gas_price = { price = 0.05, denom = 'untrn' }
+gas_price = { price = 0.002, denom = 'untrn' }
 gas_multiplier = 1.1
 max_msg_num = 30
 max_tx_size = 2097152
@@ -133,3 +133,11 @@ max_block_time = '10s'
 trusting_period = '32hours'
 trust_threshold = { numerator = '1', denominator = '3' }
 address_type = { derivation = 'cosmos' }
+
+[chains.packet_filter]
+policy = 'allow'
+list = [
+    # allow relaying only for channels created by a certain contract  
+    # TODO: fill in your INTERCHAIN_TXS_CONTRACT_ADDRESS below
+    ['icacontroller-INTERCHAIN_TXS_CONTRACT_ADDRESS*', '*'],
+]
