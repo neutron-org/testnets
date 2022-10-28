@@ -1,6 +1,8 @@
 # Installation instructions for quark-1 testnet
 
-To execute all steps without stops I assume you've already loaded and initialized the interchain_txs.wasm contract (It will be needed in config.toml for allowing only packets from it)
+> To execute all steps without stops I assume you've already loaded and initialized the interchain_txs.wasm contract (It will be needed in config.toml for allowing only packets from it)
+
+> This tutorial is for connecting with cosmoshub testnet network (theta-testnet-001). To connect hermes with juno, make same steps (from step 2) but change user name, service name, uncomment chain config for juno in config.toml.
 
 1. Install Hermes v1.0.0
 ```

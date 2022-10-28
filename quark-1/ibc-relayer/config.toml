@@ -134,6 +134,28 @@ trusting_period = '32hours'
 trust_threshold = { numerator = '1', denominator = '3' }
 address_type = { derivation = 'cosmos' }
 
+# juno: comment out cosmoshub chain and uncomment block below to connect with it
+# [[chains]]
+# id = 'uni-5'
+# rpc_addr = 'https://juno-testnet-rpc.polkachu.com/'
+# grpc_addr = 'http://juno-testnet-grpc.polkachu.com:12690'
+# websocket_addr = 'wss://juno-testnet-rpc.polkachu.com/websocket'
+# rpc_timeout = '10s'
+# account_prefix = 'juno'
+# key_name = 'juno-ibc-relayer'
+# store_prefix = 'ibc'
+# default_gas = 100000
+# max_gas = 3000000
+# gas_price = { price = 0.1, denom = 'ujunox' }
+# gas_multiplier = 1.1
+# max_msg_num = 30
+# max_tx_size = 180000
+# clock_drift = '5s'
+# max_block_time = '10s'
+# trusting_period = '18days'
+# trust_threshold = { numerator = '1', denominator = '3' }
+# address_type = { derivation = 'cosmos' }
+
 [chains.packet_filter]
 policy = 'allow'
 list = [
