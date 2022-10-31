@@ -1,4 +1,4 @@
-# Additional Tasks 
+# Additional tasks 
 
 ## For validators
 *These tasks aren't mandatory but feel free to do it if you can!*
