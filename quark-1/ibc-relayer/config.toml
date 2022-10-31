@@ -95,7 +95,7 @@ rpc_addr = TODO
 # TODO: Enter your node's public GRPC ADDRESS (ip OR host)
 grpc_addr = TODO
 # TODO: Enter your node's public websocket ADDRESS (usually equals to ws://[rpc_addr]/websocket)
-websocket_addr = 'ws://23.109.158.236:26657/websocket'
+websocket_addr = TODO
 rpc_timeout = '10s'
 account_prefix = 'neutron'
 key_name = 'neutron-ibc-relayer'

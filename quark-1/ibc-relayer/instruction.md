@@ -14,7 +14,7 @@ $ curl -L "https://github.com/informalsystems/ibc-rs/releases/download/v1.0.0/he
     mv ./hermes /usr/local/bin/
 ```
 
-Check that works and version is ok (Should be `hermes 1.0.0+ed4dd8c`)
+Check that it works and version is ok (Should be `hermes 1.0.0+ed4dd8c`)
 
 `$ hermes --version`
 
@@ -23,6 +23,7 @@ Check that works and version is ok (Should be `hermes 1.0.0+ed4dd8c`)
 ```
 $ sudo useradd -m ibc-cosmoshub-rly
 $ sudo su ibc-cosmoshub-rly && cd ~
+$ mkdir ~/.hermes
 ```
 
 3. Create systemd unit
@@ -84,7 +85,7 @@ Service status
 
 Logs
 
-`$ sudo journalctl --unit=neutron-ibc-cosmoshub-relayer`
+`$ journalctl --unit=neutron-ibc-cosmoshub-relayer`
 
 9. Create connection between testnets
 
