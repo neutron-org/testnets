@@ -91,9 +91,9 @@ port = 3001
 [[chains]]
 id = 'quark-1'
 # TODO: Enter your node's public RPC ADDRESS (ip OR host)
-rpc_addr = '?'
+rpc_addr = TODO
 # TODO: Enter your node's public GRPC ADDRESS (ip OR host)
-grpc_addr = '?'
+grpc_addr = TODO
 # TODO: Enter your node's public websocket ADDRESS (usually equals to ws://[rpc_addr]/websocket)
 websocket_addr = 'ws://23.109.158.236:26657/websocket'
 rpc_timeout = '10s'
@@ -161,5 +161,6 @@ policy = 'allow'
 list = [
     # allow relaying only for channels created by a certain contract  
     # TODO: fill in your INTERCHAIN_TXS_CONTRACT_ADDRESS below
-    ['icacontroller-INTERCHAIN_TXS_CONTRACT_ADDRESS*', '*'],
+    # will be something like `['icacontroller-neutron14hj2tavq8fpesdwxxcu44rty3hh90vhujrvcmstl4zr3txmfvw9s5c2epq*', '*'],`
+    [TODO, '*'],
 ]

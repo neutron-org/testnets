@@ -55,7 +55,7 @@ Check that config is valid
 > NOTE: Don't forget to generate your mnemonics for accounts and fill in in bash commands below
 
 ```
-$ sudo su ibc-osmo-rly
+$ sudo su ibc-cosmoshub-rly
 $ NEUTRON_MNEMONIC = "TODO"
 $ COSMOSHUB_MNEMONIC = "TODO"
 $ hermes keys add --chain quark-1 --mnemonic-file <(echo "$NEUTRON_MNEMONIC") --key-name neutron-ibc-relayer
@@ -67,10 +67,6 @@ $ hermes keys add --chain theta-testnet-001 --mnemonic-file <(echo "$COSMOSHUB_M
 Use faucets to add funds to keys
 
 7. Run service
-
-Reload config
-
-`$ sudo systemctl daemon-reload`
 
 Start it
 
