@@ -1,6 +1,6 @@
 # Neutron Testnet quark-1
 
-* First Neutron public testnet.
+First public Neutron testnet.
   
 | Attribute | Value     |
 |-----------|-----------|
@@ -10,9 +10,9 @@
 
 ### Hardware
 
-8 Cores
-64 GB RAM
-2x960 GB SSD
+* 8 Cores
+* 64 GB RAM
+* 2x960 GB SSD
 
 ### Software Versions
 
@@ -23,7 +23,7 @@
 | Rust               | > 1.63.0 |
 | Hermes IBC relayer | > 1.0    |
 
-**!! PLEASE NOTE THAT WE ARE GOING TO USE v0.0.1 FOR GENTXS ONLY AND v0.1.0 (TO BE RELEASED SHORTLY) FOR THE ACTUAL TESTNET. SORRY FOR THE INCONVENIENCE. !!**
+> **PLEASE NOTE THAT WE ARE GOING TO USE v0.0.1 FOR GENTXS ONLY AND v0.1.0 (TO BE RELEASED SHORTLY) FOR THE ACTUAL TESTNET. SORRY FOR THE INCONVENIENCE.**
 
 ## Tools
 
