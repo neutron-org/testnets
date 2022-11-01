@@ -31,7 +31,7 @@ You don't have `atom` you can go through the following steps:
 You don't have `junox` you can go through the following steps:
 
 - if you don't have Keplr [install it](https://www.keplr.app/)
-- if you don't have umi (Juno's testnet) in your Keplr go to [Junomint](https://junomint.com/), click "Connect Keplr" on the top-left and select "Juno Testnet", then proceed whith adding this network
+- if you don't have uni (Juno's testnet) in your Keplr go to this [Jsfiddle](https://jsfiddle.net/superatik/L6bys84z/1/)
 - copy your Uni address
 - go to [Faucet](https://faucet.roguenet.io/) and get your `junox`
 
