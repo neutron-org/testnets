@@ -24,7 +24,7 @@ You don't have `atom` you can go through the following steps:
 - if you don't have Keplr [install it](https://www.keplr.app/)
 - if you don't have  CosmosHub testnet in your Keplr go to this [Jsfiddle](https://jsfiddle.net/kht96uvo/1/)
 - copy your CosmosHub testnet address
-- go to [Faucet](https://faucet.roguenet.io/) channel in Discort and get your `atoms`
+- go to [Faucet](https://discord.com/channels/669268347736686612/953697793476821092) channel in Discort and get your `atoms`
 
 ## Getting ready to test on Juno
 
