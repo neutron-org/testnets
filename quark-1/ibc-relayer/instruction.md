@@ -86,7 +86,3 @@ Service status
 Logs
 
 `$ journalctl --unit=neutron-ibc-cosmoshub-relayer`
-
-9. Create connection between testnets
-
-`$ hermes create connection --a-chain quark-1 --b-chain theta-testnet-001`
