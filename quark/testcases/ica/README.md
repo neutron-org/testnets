@@ -19,7 +19,7 @@
 
 ## Getting ready to test on CosmosHub
 
-You don't have `atom` you can go through the following steps:
+If you don't have `atom`, then you can go through the following steps:
 
 - if you don't have Keplr [install it](https://www.keplr.app/)
 - if you don't have  CosmosHub testnet in your Keplr go to this [Jsfiddle](https://jsfiddle.net/kht96uvo/1/)
