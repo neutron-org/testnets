@@ -12,7 +12,7 @@ First public Neutron testnet.
 
 * 4 Cores
 * 32 GB RAM
-* 2x960 GB SSD
+* 2x512 GB SSD
 
 ### Software Versions
 
