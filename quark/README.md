@@ -10,9 +10,9 @@ First public Neutron testnet.
 
 ### Hardware
 
-* 4 Cores
-* 32 GB RAM
-* 2x512 GB SSD
+* 8 Cores
+* 64 GB RAM
+* 2x960 GB SSD
 
 ### Software Versions
 
@@ -106,6 +106,21 @@ neutrond gentx <key-name> 1000000000untrn --output-document=gentx.json \
   --min-self-delegation="1" \
   --keyring-backend <os | file>
 ```
+
+### Fill pull request description
+
+To made onboarding process more simplier and clear fill the description of your PR with the next data: <br/>
+- Your validators moniker
+- Your webpage or actual and active twitter page of your organization
+- Your Discord ID <br/>
+But you need to already be in this [Discord](https://discord.gg/r82yeMu9Rf)! <br/>
+*It's needed to give you a validator role. In case if you have teammates they should also enter the Discord and then you could type here their tags*
+- Your Neutronvaloper address
+
+### Example of filled description field in gentx+peers PR
+
+![Скриншот 03-11-2022 204428 1](https://user-images.githubusercontent.com/92199696/199796600-73f34a6f-c75c-4443-a598-21a50c067f91.png)
+<br/>
 
 ### What to do next
 
