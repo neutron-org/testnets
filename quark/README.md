@@ -109,12 +109,11 @@ neutrond gentx <key-name> 1000000000untrn --output-document=gentx.json \
 
 ### Fill pull request description
 
-To made onboarding process more simplier and clear fill the description of your PR with the next data: <br/>
-- Your validators moniker
-- Your webpage or actual and active twitter page of your organization
-- Your Discord ID <br/>
-But you need to already be in this [Discord](https://discord.gg/r82yeMu9Rf)! <br/>
-*It's needed to give you a validator role. In case if you have teammates they should also enter the Discord and then you could type here their tags*
+To make the onboarding process simpler, please fill the description of your PR with the following data: <br/>
+- Your validator's moniker
+- Your webpage and/or active twitter page of your organization
+- Each of your teammate's Discord handles <br/>
+They will need to already be in this [Discord](https://discord.gg/r82yeMu9Rf) for us to give them the right roles! <br/>
 - Your Neutronvaloper address
 
 ### Example of filled description field in gentx+peers PR
@@ -124,4 +123,4 @@ But you need to already be in this [Discord](https://discord.gg/r82yeMu9Rf)! <br
 
 ### What to do next
 
-After gentx is ready please upload it to the https://github.com/neutron-org/testnets repository into `/quark/gentxs/` directory. Also please provide your peer and put it into  `/quark/peers/`, one peer per file.
+After gentx is ready, please upload it to the https://github.com/neutron-org/testnets repository into `/quark/gentxs/` directory. Also please provide your peer and put it into  `/quark/peers/`, one peer per file.
