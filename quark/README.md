@@ -10,9 +10,9 @@ First public Neutron testnet.
 
 ### Hardware
 
-* 8 Cores
-* 64 GB RAM
-* 2x960 GB SSD
+* 4 Cores
+* 32 GB RAM
+* 2x512 GB SSD
 
 ### Software Versions
 
@@ -107,6 +107,20 @@ neutrond gentx <key-name> 1000000000untrn --output-document=gentx.json \
   --keyring-backend <os | file>
 ```
 
+### Fill pull request description
+
+To make the onboarding process simpler, please fill the description of your PR with the following data: <br/>
+- Your validator's moniker
+- Your webpage and/or active twitter page of your organization
+- Each of your teammate's Discord handles <br/>
+They will need to already be in this [Discord](https://discord.gg/r82yeMu9Rf) for us to give them the right roles! <br/>
+- Your Neutronvaloper address
+
+### Example of filled description field in gentx+peers PR
+
+![Скриншот 03-11-2022 204428 1](https://user-images.githubusercontent.com/92199696/199796600-73f34a6f-c75c-4443-a598-21a50c067f91.png)
+<br/>
+
 ### What to do next
 
-After gentx is ready please upload it to the https://github.com/neutron-org/testnets repository into `/quark/gentxs/` directory. Also please provide your peer and put it into  `/quark/peers/`, one peer per file.
+After gentx is ready, please upload it to the https://github.com/neutron-org/testnets repository into `/quark/gentxs/` directory. Also please provide your peer and put it into  `/quark/peers/`, one peer per file.
