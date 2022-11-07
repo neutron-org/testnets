@@ -3,11 +3,11 @@
 # Testing Quark testnet
 
 ## Upload testing script
-- Upload the [script](./validator_test.sh) to validator machine 
+- Upload the [script](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh) to validator machine 
 
 ## Upload contracts
 
-- At first get artifacts from [https://github.com/neutron-org/neutron-contracts/tree/main/artifacts](https://github.com/neutron-org/neutron-contracts/tree/main/artifacts)
+- At first get artifacts from [https://github.com/neutron-org/neutron-contracts/tree/neutron_audit_oak_19_09_2022_fixes/artifacts](https://github.com/neutron-org/neutron-contracts/tree/neutron_audit_oak_19_09_2022_fixes/artifacts)
 - Upload them to your node
 - Instantiate contract (store the address of contract for hermes config later)
     
@@ -58,7 +58,7 @@ $ exit
 
 ## Test
 
-- Upload [testing script](./validator_test.sh) to your node
+- Upload [testing script](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh) to your node
 - run this script on your server `./validator_test.sh /path/to/contracts/neutron_validators_test.wasm YOUR_CONNECTION_ID`
 - follow the script instructions
 - in case of error contact dev team via [Discord](https://discord.com/channels/986573321023942708/1030044052529352724) or [Telegram](https://t.me/neutron_community)
