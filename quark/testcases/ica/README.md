@@ -7,7 +7,7 @@
 
 ## Upload contracts
 
-- At first get artifacts from [https://github.com/neutron-org/neutron-contracts/tree/main/artifacts](https://github.com/neutron-org/neutron-contracts/tree/main/artifacts) (TODO: update when we get it merged)
+- At first get artifacts from [https://github.com/neutron-org/neutron-contracts/tree/main/artifacts](https://github.com/neutron-org/neutron-contracts/tree/main/artifacts)
 - Upload them to your node
 - Instantiate contract (store the address of contract for hermes config later)
     
