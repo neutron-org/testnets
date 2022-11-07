@@ -3,6 +3,8 @@
 ## For validators
 *These tasks aren't mandatory, but they will be appreciated! They should be considered as examples of useful contributions, don't be scared of using your own creativity!*
 
+## Feel free to use this [brandbook](https://drive.google.com/drive/folders/1bIUQ4-ejI7OX8zhYWZRy2nCgPGbQj6F7) with visual assets, colors and logos in your work!
+
 ### 1. *Run chain explorer* <br/>
 You could run your own explorer for the Neutron chain. It could include features that Neutron will use on mainnet, such as a smart-contracts counter and so on.
 
