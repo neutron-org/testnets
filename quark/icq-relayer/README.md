@@ -1,5 +1,9 @@
 # Configuration for Neutron Query Relayer
 
+## Prerequisities
+
+- Go programming language, version 1.18.7 or newer.
+
 ## Install relayer
 
 You can get source code [here](https://github.com/neutron-org/neutron-query-relayer).
