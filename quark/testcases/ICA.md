@@ -1,1 +1,0 @@
-# ICA (Interchain accounts) testcases
