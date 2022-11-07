@@ -37,7 +37,7 @@ You don't have `junox` you can go through the following steps:
 
 ## Prepare IBC relayer (Hermes)
 
-[Install Hermes for quark-1](https://www.notion.so/Install-Hermes-for-quark-1-8137dc949630488fb49a562660c745bb)
+[Install Hermes for quark-1](https://github.com/neutron-org/testnets/blob/main/quark/ibc-relayer/instruction.md)
 
 ## Create connection between chains
 
