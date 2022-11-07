@@ -58,7 +58,7 @@ $ exit
 
 ## Test
 
-- Upload [testing script](https://github.com/neutron-org/neutron-contracts/blob/fae4fbfb6496fb9eeea6e7a3b39dfb0816a4a6fe/validator_test.sh) to your node
+- Upload [testing script](./validator_test.sh) to your node
 - run this script on your server `./validator_test.sh /path/to/contracts/neutron_validators_test.wasm YOUR_CONNECTION_ID`
 - follow the script instructions
 - in case of error contact dev team via [Discord](https://discord.com/channels/986573321023942708/1030044052529352724) or [Telegram](https://t.me/neutron_community)
