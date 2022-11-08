@@ -132,6 +132,6 @@ SUCCESS Connection {
 ```
 
 <aside>
-💡 Save the newly created neutron `connection_id`s somewhere — they are required to run the testing script.
+💡 Save the newly created neutron `connection_id` somewhere — is is required to run the testing script.
 </aside>
 
