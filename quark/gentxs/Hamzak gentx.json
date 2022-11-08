@@ -1,0 +1,60 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+        "description": {
+          "moniker": "HamzaK",
+          "identity": "“F73B0C8545FB882C”",
+          "website": "",
+          "security_contact": "",
+          "details": ""
+        },
+        "commission": {
+          "rate": "0.100000000000000000",
+          "max_rate": "0.200000000000000000",
+          "max_change_rate": "0.010000000000000000"
+        },
+        "min_self_delegation": "1",
+        "delegator_address": "neutron1ag223l8ywc4dafsu03xap3lnall5u8fehz0h79",
+        "validator_address": "neutronvaloper1ag223l8ywc4dafsu03xap3lnall5u8fedlkwcp",
+        "pubkey": {
+          "@type": "/cosmos.crypto.ed25519.PubKey",
+          "key": "UXocLrggEjg16XqJnZI2t806JbmC4s/0a+umQI/gU8Q="
+        },
+        "value": {
+          "denom": "untrn",
+          "amount": "1000000000"
+        }
+      }
+    ],
+    "memo": "6e29e475228ace046d1354dedb5088d6695d9915@65.21.248.203:26656",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [
+      {
+        "public_key": {
+          "@type": "/cosmos.crypto.secp256k1.PubKey",
+          "key": "AqSSPI8l8LQd6JPBVospJHTH3UxrOjIw0/9jjsuZvCyh"
+        },
+        "mode_info": {
+          "single": {
+            "mode": "SIGN_MODE_DIRECT"
+          }
+        },
+        "sequence": "0"
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas_limit": "200000",
+      "payer": "",
+      "granter": ""
+    }
+  },
+  "signatures": [
+    "q+/aaZnNhbub/FaqQOT60tLadKztuI0hGHQAYBHuthMWnWACc1E4ONYHpNMeHjv7xgvxwhodtmA8VJHhmZ8tGA=="  ]
+}
