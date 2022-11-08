@@ -43,7 +43,7 @@ This is done as one of the [steps](https://github.com/neutron-org/neutron-contra
 
 You need to know the address of the test contract in order to configure ICA and ICQ relayers properly (so that they process only the messages related to that specific contract). In order to do that:
 
-1. Upload the contract instantiation [script](https://github.com/neutron-org/neutron-contracts/tree/neutron_audit_oak_19_09_2022_fixes)(https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test_upload_contract.sh) to your machine,
+1. Upload the contract instantiation [script](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test_upload_contract.sh) to your machine,
 2. Execute the script: `sh validator_test_upload_contract.sh`.
 
 ### Setting up the relayers
