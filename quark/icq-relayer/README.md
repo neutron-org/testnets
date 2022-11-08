@@ -6,14 +6,19 @@
 
 ## Install relayer
 
-You can get source code [here](https://github.com/neutron-org/neutron-query-relayer).
+> Note: if you don't want to build the relayer, you can get the binaries from the [releases](https://github.com/neutron-org/neutron-query-relayer/releases/tag/v0.1.0) page.
 
-Run `make install` to install relayer into your `$GOHOME/bin`.
-Make sure your `$GOHOME/bin` is in the `$PATH`.
+```
+git clone -b v0.1.0 https://github.com/neutron-org/neutron-query-relayer.git
+$ cd neutron-query-relayer
+$ make install
+```
+
+This installs the relayer binary into your `$GOHOME/bin`. Make sure your `$GOHOME/bin` is in the `$PATH`.
 
 ## Install neutron
 
-You can get source code [here](https://github.com/neutron-org/neutron).
+See the [instructions](https://github.com/neutron-org/testnets/blob/main/quark/README.md#node-installation), or download a binary from the [releases](https://github.com/neutron-org/neutron/releases/tag/v0.1.0) page.
 
 Run `make install` to install relayer into your `$GOHOME/bin`.
 Make sure your `$GOHOME/bin` is in the `$PATH`.
