@@ -144,5 +144,7 @@ This section contains the desciption of the ICA and ICQ test cases. The *single*
 
 > NOTE: when prompted for a passphrase, use the same passphrase you used when uploading the contract.
 
+> NOTE: if you see the message `Please send 0.02 atom to cosmosXXXXXXXXXXXX`, use the Keplr wallet to send the required amount to that address.
+
 In case of errors, contact the dev team on [Discord](https://discord.com/channels/986573321023942708/1030044052529352724) or [Telegram](https://t.me/neutron_community).
 
