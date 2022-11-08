@@ -84,7 +84,7 @@ This section contains the desciption of the ICA and ICQ test cases. The *single*
 
 ### ICQ
 
-1. Upload the testing contract [artifact]([TODO](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/artifacts/neutron_validators_test.wasm)),
+1. Upload the testing contract [artifact](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/artifacts/neutron_validators_test.wasm),
 2. Register a tx query (send a [message](TODO) to the contract), and share tx hash,
 3. Register a kv query (send a [message](TODO) to the contract), and share tx hash,
 4. Wait until the relayer submits the responses, share the txs in a google form,
