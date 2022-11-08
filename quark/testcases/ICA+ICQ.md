@@ -18,6 +18,8 @@ The testing script does not set up the IBC and ICQ relayers. You will need to se
 
 ### Getting testnet tokens on target chain
 
+> NOTE: https://jsfiddle.net might not be accessible from your location without VPN.
+
 #### Cosmos hub
 
 If you don't have `atom`s, then you can go through the following steps:
