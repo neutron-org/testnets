@@ -33,7 +33,13 @@ ICQ relayer must have an address on the Neutron chain, and this address must hav
 
 Run `neutrond keys add my_wallet --recover --home /path/to/home --keyring-backend test` and input your mnemonic.
 
-Upload the [.env](https://github.com/neutron-org/testnets/blob/main/quark/icq-relayer/.env) file to your machine, open this file in your text editor and fill in following variables:
+Upload the template `.env` file to your machine:
+
+```
+wget https://raw.githubusercontent.com/neutron-org/testnets/main/quark/icq-relayer/.env
+```
+
+Open this file in your text editor and fill in following variables (see the [documentation](https://docs.neutron.org/relaying/icq-relayer#configuration) for detailed description of the parameters):
 
 - RELAYER_NEUTRON_CHAIN_RPC_ADDR
 - RELAYER_NEUTRON_CHAIN_REST_ADDR
