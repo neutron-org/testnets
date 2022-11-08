@@ -14,23 +14,27 @@ $ cd neutron-query-relayer
 $ make install
 ```
 
-This installs the relayer binary into your `$GOHOME/bin`. Make sure your `$GOHOME/bin` is in the `$PATH`.
+This installs the relayer binary into your `$GOHOME/bin`. Make sure your `$GOHOME/bin` is in the `$PATH`. Check the version by running:
+
+```
+$ neutron_query_relayer version
+Version: 0.1.0
+Commit: 934ff75595858461bbc5eb300cff03c43f11f4ab
+```
 
 ## Install neutron
 
 See the [instructions](https://github.com/neutron-org/testnets/blob/main/quark/README.md#node-installation), or download a binary from the [releases](https://github.com/neutron-org/neutron/releases/tag/v0.1.0) page.
 
-Run `make install` to install relayer into your `$GOHOME/bin`.
-Make sure your `$GOHOME/bin` is in the `$PATH`.
 
 ## Configuration
 
-Run `neutrond keys add my_wallet --recover --home /path/to/home --keyring-backend test`.
-Input your mnemonic. Address associated with your mnemonic should have adequate amount
-of tokens to be able to submit query results (it is wise to have at least 5 neutrons).
-Use [faucet](http://23.109.159.28/).
+ICQ relayer must have an address on the Neutron chain, and this address must have some `$ntrn` testnet tokens on it. Check the [instruction](https://github.com/neutron-org/testnets/blob/main/quark/testcases/ICA+ICQ.md#generate-the-relayer-address-on-neutron-and-get-testnet-ntrn-tokens) on how to get testnet `$ntrn` tokens.
 
-Open `.env` in your text editor and fill in following variables:
+Run `neutrond keys add my_wallet --recover --home /path/to/home --keyring-backend test` and input your mnemonic.
+
+Upload the [.env](https://github.com/neutron-org/testnets/blob/main/quark/icq-relayer/.env) file to your machine, open this file in your text editor and fill in following variables:
+
 - RELAYER_NEUTRON_CHAIN_RPC_ADDR
 - RELAYER_NEUTRON_CHAIN_REST_ADDR
 - RELAYER_NEUTRON_CHAIN_HOME_DIR
