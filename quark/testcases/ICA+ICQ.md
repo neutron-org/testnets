@@ -22,7 +22,7 @@ See the [instructions](https://github.com/neutron-org/testnets/blob/main/quark/R
 
 ### Getting testnet tokens on target chain
 
-Testnet tokens are required for the operation of the IBC relayer.
+Testnet tokens are required for the operation of the IBC relayer. Once again: **you will specify this address in `hermes` configuration as the address on the target chain of your choice.**
 
 > NOTE: https://jsfiddle.net might not be accessible from your location without VPN.
 
