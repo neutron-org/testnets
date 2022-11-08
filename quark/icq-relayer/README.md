@@ -41,12 +41,12 @@ wget https://raw.githubusercontent.com/neutron-org/testnets/main/quark/icq-relay
 
 Open this file in your text editor and fill in following variables (see the [documentation](https://docs.neutron.org/relaying/icq-relayer#configuration) for detailed description of the parameters):
 
-- RELAYER_NEUTRON_CHAIN_RPC_ADDR
-- RELAYER_NEUTRON_CHAIN_REST_ADDR
+- RELAYER_NEUTRON_CHAIN_RPC_ADDR (e.g., `http://23.109.158.236:26657` — note `http://` and no trailing slash)
+- RELAYER_NEUTRON_CHAIN_REST_ADDR (e.g., `http://23.109.158.236:1317` — note `http://` and no trailing slash)
 - RELAYER_NEUTRON_CHAIN_HOME_DIR
 - RELAYER_NEUTRON_CHAIN_CONNECTION_ID
 - RELAYER_NEUTRON_CHAIN_CLIENT_ID
-- RELAYER_TARGET_CHAIN_RPC_ADDR
+- RELAYER_TARGET_CHAIN_RPC_ADDR (e.g., `http://164.90.146.43:26657` — note `http://` and no trailing slash)
 - RELAYER_TARGET_CHAIN_CLIENT_ID
 - RELAYER_REGISTRY_ADDRESSES
 - RELAYER_STORAGE_PATH
