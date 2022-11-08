@@ -43,13 +43,11 @@ Open this file in your text editor and fill in following variables (see the [doc
 
 - RELAYER_NEUTRON_CHAIN_RPC_ADDR (e.g., `http://23.109.158.236:26657` — note `http://` and no trailing slash)
 - RELAYER_NEUTRON_CHAIN_REST_ADDR (e.g., `http://23.109.158.236:1317` — note `http://` and no trailing slash)
-- RELAYER_NEUTRON_CHAIN_HOME_DIR
+- RELAYER_NEUTRON_CHAIN_HOME_DIR (e.g., `/path/to/home` — this is the path to keyring)
 - RELAYER_NEUTRON_CHAIN_CONNECTION_ID
-- RELAYER_NEUTRON_CHAIN_CLIENT_ID
 - RELAYER_TARGET_CHAIN_RPC_ADDR (e.g., `http://164.90.146.43:26657` — note `http://` and no trailing slash)
-- RELAYER_TARGET_CHAIN_CLIENT_ID
 - RELAYER_REGISTRY_ADDRESSES
-- RELAYER_STORAGE_PATH
+- RELAYER_STORAGE_PATH (just some path — a new directory will be automatically created)
 
 ## Run the ICQ relayer
 
