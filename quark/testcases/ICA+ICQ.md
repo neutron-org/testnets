@@ -98,7 +98,7 @@ The contract address, in this case `neutron1hzz0s0ucrhdp6tue2lxk3c03nj6f60qy463w
 
 See the [instruction](https://github.com/neutron-org/testnets/blob/main/quark/ibc-relayer/instruction.md).
 
-> Note: don't forget to [specify](https://github.com/neutron-org/testnets/blob/9146e8c3f8d954798d478a822592888d7ff52e66/quark/ibc-relayer/config.toml#L164) the channels that the relayer will work with using the contract address from the previous step. See the [documentation](https://docs.neutron.org/neutron/interchain-txs/overview#relaying) for more information.
+> Note: you should first start the relayer **without** specifying [the channel](https://github.com/neutron-org/testnets/blob/main/quark/ibc-relayer/config.toml#L163-L165) that the relayer will work with using the contract address from the previous step. You can add this config and restart the relayer **after** running the [testing sript](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh) (see below) to make `hermes` only relay packets that are produced by your test contract. See the [documentation](https://docs.neutron.org/neutron/interchain-txs/overview#relaying) for more information.
 
 #### ICQ relayer setup 
 
