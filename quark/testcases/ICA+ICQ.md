@@ -22,7 +22,7 @@ See the [instructions](https://github.com/neutron-org/testnets/blob/main/quark/R
 
 ### Getting testnet tokens on target chain
 
-Testnet tokens are required for the operation of the IBC relayer. Once again: **you will specify this address in `hermes` configuration as the address on the target chain of your choice.**
+Testnet tokens are required for the operation of the IBC relayer. **You will specify the address used in this section in `hermes` configuration as the address on the target chain of your choice.**
 
 > NOTE: https://jsfiddle.net might not be accessible from your location without VPN.
 
@@ -34,6 +34,13 @@ If you don't have `atom`s, then you can go through the following steps:
 - If you don't have  CosmosHub testnet in your Keplr, go to this [Jsfiddle](https://jsfiddle.net/kht96uvo/1/), a `theta-testnet-001` network will be now available in Keplr,
 - Copy your CosmosHub testnet address (or generate a new one),
 - Go to [Faucet](https://discord.com/channels/669268347736686612/953697793476821092) channel in Discord and get your `atom`s (make sure that you are added to the sever first: https://discord.gg/cosmosnetwork).
+
+### Generate the relayer address on Neutron and get testnet `$ntrn` tokens
+
+Testnet tokens are required for the operation of the IBC relayer. **You will specify the address used in this section in `hermes` configuration as the address on the Neutron chain.**
+
+1. Go to the Faucet (http://23.109.159.28/) and get tokens for your relayer address that is going to be used on the Neutron chain,
+2. Make sure tx is passed by going to http://23.109.159.28:3333//accounts/<your_relayer_address>.
 
 #### Juno
 
