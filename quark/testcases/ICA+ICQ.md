@@ -27,7 +27,7 @@ If you don't have `atom`s, then you can go through the following steps:
 - If you don't have Keplr [install it](https://www.keplr.app/),
 - If you don't have  CosmosHub testnet in your Keplr, go to this [Jsfiddle](https://jsfiddle.net/kht96uvo/1/), a `theta-testnet-001` network will be now available in Keplr,
 - Copy your CosmosHub testnet address (or generate a new one),
-- Go to [Faucet](https://discord.com/channels/669268347736686612/953697793476821092) channel in Discord and get your `atoms`.
+- Go to [Faucet](https://discord.com/channels/669268347736686612/953697793476821092) channel in Discord and get your `atom`s (make sure that you are added to the sever first: https://discord.gg/cosmosnetwork).
 
 #### Juno
 
