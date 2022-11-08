@@ -14,7 +14,7 @@ $ cd neutron-query-relayer
 $ make install
 ```
 
-This installs the relayer binary into your `$GOHOME/bin`. Make sure your `$GOHOME/bin` is in the `$PATH`. Check the version by running:
+This installs the relayer binary into your `$GOPATH/bin`. Make sure your `$GOPATH/bin` is in the `$PATH`. Check the version by running:
 
 ```
 $ neutron_query_relayer version
