@@ -82,7 +82,7 @@ This script:
 * Uploads the contract code,
 * Instantiates the contract.
 
-Make sure that you saved the contract address, in this case `neutron1hzz0s0ucrhdp6tue2lxk3c03nj6f60qy463we7lgx0wudd72ctmsw8xeng`.
+The contract address, in this case `neutron1hzz0s0ucrhdp6tue2lxk3c03nj6f60qy463we7lgx0wudd72ctmsw8xeng`, is saved to `./contract_address.tmp`.
 
 ### Setting up the relayers
 
