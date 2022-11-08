@@ -9,7 +9,7 @@
 > Note: if you don't want to build the relayer, you can get the binaries from the [releases](https://github.com/neutron-org/neutron-query-relayer/releases/tag/v0.1.0) page.
 
 ```
-git clone -b v0.1.0 https://github.com/neutron-org/neutron-query-relayer.git
+$ git clone -b v0.1.0 https://github.com/neutron-org/neutron-query-relayer.git
 $ cd neutron-query-relayer
 $ make install
 ```
