@@ -2,9 +2,10 @@
 
 > **Note: we assume that you've already initialized the test smart contract. You will need the contract address to put it in `config.toml` to make the relayer only work with packets coming from this contract.**
 
-This tutorial is for connecting with cosmoshub testnet network (theta-testnet-001). To connect hermes with juno, go through the same steps (from step 2) but change the user name and service name, and uncomment the chain config for juno in `config.toml`.
+This tutorial is for connecting with cosmoshub testnet network (theta-testnet-001). To connect hermes with juno, go through the same steps (from step 2) but change the user name and service name, and uncomment the chain config for juno in `config.toml`. This tutorial installs hermes as a daemon.
 
-1. Install Hermes v1.0.0
+## 1. Install Hermes v1.0.0
+
 ```
 $ PLATFORM=`uname -a | awk '{print $(NF-1)}'`
 $ curl -L "https://github.com/informalsystems/ibc-rs/releases/download/v1.0.0/hermes-v1.0.0-${PLATFORM}-unknown-linux-gnu.tar.gz" > hermes.tar.gz && \
@@ -18,7 +19,7 @@ Check that it works and version is ok (Should be `hermes 1.0.0+ed4dd8c`)
 
 `$ hermes --version`
 
-2. Add user
+## 2. Add user
 
 ```
 $ sudo useradd -m ibc-cosmoshub-rly
@@ -26,7 +27,7 @@ $ sudo su ibc-cosmoshub-rly && cd ~
 $ mkdir ~/.hermes
 ```
 
-3. Create systemd unit
+## 3. Create a systemd unit
 
 Create file `/etc/systemd/system/neutron-ibc-cosmoshub-relayer.service` with content:
 
@@ -43,7 +44,7 @@ ExecStart=/usr/local/bin/hermes start
 WantedBy=multi-user.target
 ```
 
-4. Copy config from https://github.com/neutron-org/testnets/blob/main/quark/ibc-relayer/config.toml into `~/.hermes/config.toml` AND fill missing parameters
+## 4. Copy config from https://github.com/neutron-org/testnets/blob/main/quark/ibc-relayer/config.toml into `~/.hermes/config.toml` AND fill missing parameters
 
 > NOTE: Don't forget to fill missing parameters in (marked by TODO comments)
 
@@ -51,7 +52,7 @@ Check that config is valid
 
 `$ hermes health-check`
 
-5. Add keys to relayer
+## 5. Add keys to relayer
 
 > NOTE: Don't forget to generate your mnemonics for accounts and fill in in bash commands below
 
@@ -63,7 +64,7 @@ $ hermes keys add --chain quark-1 --mnemonic-file <(echo "$NEUTRON_MNEMONIC") --
 $ hermes keys add --chain theta-testnet-001 --mnemonic-file <(echo "$COSMOSHUB_MNEMONIC") --key-name cosmoshub-ibc-relayer
 ```
 
-6. Add funds to relayer keys
+## 6. Add funds to relayer keys
 
 Use faucets to add funds to keys
 
@@ -77,7 +78,7 @@ Make it run on each boot
 
 `$ sudo systemctl enable neutron-ibc-cosmoshub-relayer.service`
 
-8. Make sure it's running okay
+## 8. Make sure it's running okay
 
 Service status
 
