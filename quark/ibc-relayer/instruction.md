@@ -70,7 +70,7 @@ $ hermes keys add --chain theta-testnet-001 --mnemonic-file <(echo "$COSMOSHUB_M
 
 Use faucets to add funds to keys
 
-7. Run service
+## 7. Run the service
 
 Start it
 
