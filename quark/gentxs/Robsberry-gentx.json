@@ -1,0 +1,60 @@
+{
+  body {
+    messages [
+      {
+        @type cosmos.staking.v1beta1.MsgCreateValidator,
+        description {
+          moniker Robsberry,
+          identity “27054F5CE3F4B80A”,
+          website ,
+          security_contact ,
+          details 
+        },
+        commission {
+          rate 0.100000000000000000,
+          max_rate 0.200000000000000000,
+          max_change_rate 0.010000000000000000
+        },
+        min_self_delegation 1,
+        delegator_address neutron1nygjksqyuynqnn4gjuqrgfln8ckjzlzsdpdpf9,
+        validator_address neutronvaloper1nygjksqyuynqnn4gjuqrgfln8ckjzlzshu5c0p,
+        pubkey {
+          @type cosmos.crypto.ed25519.PubKey,
+          key bEGBB4yNYrvyqiQxa3d66A9TMroZzKhitksir9fcNkE=
+        },
+        value {
+          denom untrn,
+          amount 1000000000
+        }
+      }
+    ],
+    memo 00aac83b7706d46a01c161deaa2e2ec6975f0eb3@167.235.21.14926656,
+    timeout_height 0,
+    extension_options [],
+    non_critical_extension_options []
+  },
+  auth_info {
+    signer_infos [
+      {
+        public_key {
+          @type cosmos.crypto.secp256k1.PubKey,
+          key A06y4mP7TrXjGp6j9y3oWGclYKVh6f3saBQvVYlpqe6N
+        },
+        mode_info {
+          single {
+            mode SIGN_MODE_DIRECT
+          }
+        },
+        sequence 0
+      }
+    ],
+    fee {
+      amount [],
+      gas_limit 200000,
+      payer ,
+      granter 
+    }
+  },
+  signatures [
+    1SLEa3QCqKJ2BORqrcgklSRVuu7PAHtCMtQjvQ2e+NnDk8dztl8lJdQXAoJfkRFmRXzY5l4KkDnTEQTKsFcEA==  ]
+}
