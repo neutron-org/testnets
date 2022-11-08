@@ -23,7 +23,7 @@ Check that it works and version is ok (Should be `hermes 1.0.0+ed4dd8c`)
 
 ```
 $ sudo useradd -m ibc-cosmoshub-rly
-$ sudo su ibc-cosmoshub-rly && cd ~
+$ sudo su ibc-cosmoshub-rly && cd ~/
 $ mkdir ~/.hermes
 ```
 
