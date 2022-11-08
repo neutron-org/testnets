@@ -38,10 +38,6 @@ You don't have `junox` you can go through the following steps:
 - Copy your Uni address (or generate a new one),
 - Go to [Faucet](https://faucet.roguenet.io/) and get your `junox`.
 
-### Getting testnet tokens on Neutron
-
-This is done as one of the [steps](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh#L85) in the testing script. No actions are required at this point.
-
 ### Uploading the test contract
 
 You need to know the address of the test contract in order to configure ICA and ICQ relayers properly (so that they process only the messages related to that specific contract). In order to do that:
