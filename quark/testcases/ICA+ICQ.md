@@ -88,12 +88,11 @@ This section contains the desciption of the ICA and ICQ test cases. The *single*
 2. Register a tx query (send a [message](TODO) to the contract), and share tx hash,
 3. Register a kv query (send a [message](TODO) to the contract), and share tx hash,
 4. Wait until the relayer submits the responses, share the txs in a google form,
-5. Control contract address balance during query registration to register balance reduction for deposit (please read the deposits [documentation](https://docs.neutron.org/neutron/interchain-queries/overview#query-creation-deposit))
-6. Delete **the tx query** by sending a [message](TODO) to the contract before the query submit timeout event, to collect the deposit to contract address,
-7. Delete **the kv query** using a 3rd party address (not the contract address) after query submit timeout event, to collect deposit to this, 3rd party address.
+5. Control contract address balance during query registration to register balance reduction for deposit (please read the deposits [documentation](https://docs.neutron.org/neutron/interchain-queries/overview#query-creation-deposit)),
+6. Delete **the tx query** (send a [message](TODO) to the contract) before the query submit timeout event, to collect the deposit to contract address,
+7. Delete **the kv query** using a 3rd party address (not the contract address) after query submit timeout event (send a [message](TODO) to the Interchain Queries module), to collect deposit to this, 3rd party address.
 
 ## Running the tasks
-
 
 ## Test
 
