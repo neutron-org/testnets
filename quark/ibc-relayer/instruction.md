@@ -65,9 +65,9 @@ $ hermes keys add --chain quark-1 --mnemonic-file <(echo "$NEUTRON_MNEMONIC") --
 $ hermes keys add --chain $TARGET_CHAIN_ID --mnemonic-file <(echo "$TARGET_CHAIN_MNEMONIC") --key-name cosmoshub-ibc-relayer
 ```
 
-## 6. Add funds to relayer keys
+## 6. Check funds
 
-Use faucets to add funds to keys
+Make sure that the relayer keys provided on previous step have enough funds. You can find top up istructions [here](https://github.com/neutron-org/testnets/blob/main/quark/testcases/ICA+ICQ.md#getting-ready).
 
 ## 7. Run the service
 
