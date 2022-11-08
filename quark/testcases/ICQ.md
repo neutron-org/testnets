@@ -1,1 +1,0 @@
-# ICQ (Interchain Queiries) Testcases 

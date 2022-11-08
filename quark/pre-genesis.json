@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2022-11-09T00:00:00.0Z",
+  "genesis_time": "2022-11-09T10:00:00.0Z",
   "chain_id": "quark-1",
   "initial_height": "1",
   "consensus_params": {
