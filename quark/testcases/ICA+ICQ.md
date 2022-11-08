@@ -140,5 +140,7 @@ This section contains the desciption of the ICA and ICQ test cases. The *single*
 1. Upload the [testing script](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh) to your node,
 2. Run this script on your server `./validator_test.sh YOUR_CONNECTION_ID`,
 3. Follow the script instructions,
-4. In case of errors contact the dev team on [Discord](https://discord.com/channels/986573321023942708/1030044052529352724) or [Telegram](https://t.me/neutron_community).
+4. Collect the output and paste in to the results [submission form](TODO)
+
+In case of errors, contact the dev team on [Discord](https://discord.com/channels/986573321023942708/1030044052529352724) or [Telegram](https://t.me/neutron_community).
 
