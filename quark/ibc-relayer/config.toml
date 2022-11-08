@@ -162,5 +162,5 @@ list = [
     # allow relaying only for channels created by a certain contract  
     # TODO: fill in your INTERCHAIN_TXS_CONTRACT_ADDRESS below
     # will be something like `['icacontroller-neutron14hj2tavq8fpesdwxxcu44rty3hh90vhujrvcmstl4zr3txmfvw9s5c2epq*', '*'],`
-    [TODO, '*'],
+    ['*', '*'],
 ]
