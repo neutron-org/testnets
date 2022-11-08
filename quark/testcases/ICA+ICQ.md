@@ -35,13 +35,6 @@ If you don't have `atom`s, then you can go through the following steps:
 - Copy your CosmosHub testnet address (or generate a new one),
 - Go to [Faucet](https://discord.com/channels/669268347736686612/953697793476821092) channel in Discord and get your `atom`s (make sure that you are added to the sever first: https://discord.gg/cosmosnetwork).
 
-### Generate the relayer address on Neutron and get testnet `$ntrn` tokens
-
-Testnet tokens are required for the operation of the IBC relayer. **You will specify the address used in this section in `hermes` configuration as the address on the Neutron chain.**
-
-1. Go to the Faucet (http://23.109.159.28/) and get tokens for your relayer address that is going to be used on the Neutron chain,
-2. Make sure tx is passed by going to http://23.109.159.28:3333//accounts/<your_relayer_address>.
-
 #### Juno
 
 You don't have `junox` you can go through the following steps:
@@ -50,6 +43,14 @@ You don't have `junox` you can go through the following steps:
 - If you don't have uni (Juno's testnet) in your Keplr, go to this [Jsfiddle](https://jsfiddle.net/superatik/L6bys84z/1/),
 - Copy your Uni address (or generate a new one),
 - Go to [Faucet](https://faucet.roguenet.io/) and get your `junox`.
+
+### Generate the relayer address on Neutron and get testnet `$ntrn` tokens
+
+Testnet tokens are required for the operation of the IBC relayer. **You will specify the address used in this section in `hermes` configuration as the address on the Neutron chain.**
+
+1. Go to the Faucet (http://23.109.159.28/) and get tokens for your relayer address that is going to be used on the Neutron chain,
+2. Make sure tx is passed by going to http://23.109.159.28:3333//accounts/<your_relayer_address>.
+
 
 ### Uploading the test contract
 
