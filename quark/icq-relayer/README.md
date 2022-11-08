@@ -51,6 +51,8 @@ Open this file in your text editor and fill in following variables (see the [doc
 - RELAYER_REGISTRY_ADDRESSES
 - RELAYER_STORAGE_PATH
 
-## Run
+## Run the ICQ relayer
 
-Before starting `neutron-query-relayer`, execute `export $(grep -v '^#' .env | xargs)`
+```
+export $(grep -v '^#' .env | xargs) && neutron_query_relayer start
+```
