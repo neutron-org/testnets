@@ -40,7 +40,7 @@ You don't have `junox` you can go through the following steps:
 
 ### Getting testnet tokens on Neutron
 
-This is done as one of the [steps](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh#L85) in the testing script.
+This is done as one of the [steps](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh#L85) in the testing script. No actions are required at this point.
 
 ### Uploading the test contract
 
