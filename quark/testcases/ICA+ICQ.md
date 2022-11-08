@@ -64,7 +64,7 @@ $ exit
 ```
 
 <aside>
-💡 Write newly created neutron connection id’s somewhere - they are needed for running scripts
+💡 Save the newly created neutron `connection_id`s somewhere — they are required to run the testing script.
 </aside>
 
 ## Test cases [informational]
@@ -73,10 +73,10 @@ This section contains the desciption of the ICA and ICQ test cases. The *single*
 
 ### ICA
 
-1. Upload the testing contract [artifact](TODO),
-2. Execute an interchain transaction that should return a successful ACK, share the tx links,
-3. Execute an interchain transaction that should return an error ACK, share the tx links,
-4. Execute an interchain transaction that should return an successful ACK that will be processed by the contract with an error, share the tx links.
+1. Upload the testing contract [artifact](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/artifacts/neutron_validators_test.wasm),
+2. Execute an interchain transaction (send a [message](TODO) to the contract) that should return a successful ACK, share the tx links,
+3. Execute an interchain transaction (send a [message](TODO) to the contract) that should return an error ACK, share the tx links,
+4. Execute an interchain transaction (send a [message](TODO) to the contract) that should return an successful ACK that will be processed by the contract with an error, share the tx links.
 
 > Note: when the ICA module executes an interchain transaction on the host chain, an IBC acknowledgement packet gets sent to the controller chain. This acknowledgement can either be a successful acknowledgement or an error acknowledgement. 
 
@@ -84,7 +84,7 @@ This section contains the desciption of the ICA and ICQ test cases. The *single*
 
 ### ICQ
 
-1. Upload the testing contract [artifact](TODO),
+1. Upload the testing contract [artifact]([TODO](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/artifacts/neutron_validators_test.wasm)),
 2. Register a tx query (send a [message](TODO) to the contract), and share tx hash,
 3. Register a kv query (send a [message](TODO) to the contract), and share tx hash,
 4. Wait until the relayer submits the responses, share the txs in a google form,
