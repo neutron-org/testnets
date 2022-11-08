@@ -44,11 +44,13 @@ ExecStart=/usr/local/bin/hermes start
 WantedBy=multi-user.target
 ```
 
-## 4. Copy config from https://github.com/neutron-org/testnets/blob/main/quark/ibc-relayer/config.toml into `~/.hermes/config.toml` AND fill missing parameters
+## 4. Configure the relayer
+
+Copy the example [config](https://github.com/neutron-org/testnets/blob/main/quark/ibc-relayer/config.toml) into `~/.hermes/config.toml` **and fill the missing parameters.**
 
 > NOTE: Don't forget to fill missing parameters in (marked by TODO comments)
 
-Check that config is valid
+Check that config is valid:
 
 `$ hermes health-check`
 
