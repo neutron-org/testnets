@@ -48,15 +48,13 @@ WantedBy=multi-user.target
 
 Copy the example [config](https://github.com/neutron-org/testnets/blob/main/quark/ibc-relayer/config.toml) into `~/.hermes/config.toml` **and fill the missing parameters.**
 
-> NOTE: Don't forget to fill missing parameters in (marked by TODO comments)
-
-Check that config is valid:
+Don't forget to fill in the missing parameters (marked by TODO comments). Check that config is valid:
 
 `$ hermes health-check`
 
 ## 5. Add keys to relayer
 
-> NOTE: Don't forget to generate your mnemonics for accounts and fill in in bash commands below
+Don't forget to generate your mnemonics for accounts and fill in in bash commands below:
 
 ```
 $ sudo su ibc-cosmoshub-rly
@@ -72,20 +70,20 @@ Use faucets to add funds to keys
 
 ## 7. Run the service
 
-Start it
+Start it:
 
 `$ sudo systemctl start neutron-ibc-cosmoshub-relayer.service`
 
-Make it run on each boot
+Make it run on each boot:
 
 `$ sudo systemctl enable neutron-ibc-cosmoshub-relayer.service`
 
 ## 8. Make sure it's running okay
 
-Service status
+Service status:
 
 `$ sudo systemctl status neutron-ibc-cosmoshub-relayer.service`
 
-Logs
+Logs:
 
 `$ journalctl --unit=neutron-ibc-cosmoshub-relayer`
