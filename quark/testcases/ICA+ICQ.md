@@ -47,7 +47,9 @@ See the [instruction](https://github.com/neutron-org/testnets/blob/main/quark/ib
 
 > Note: the IBC rlayer allows you to [specify](https://github.com/neutron-org/testnets/blob/9146e8c3f8d954798d478a822592888d7ff52e66/quark/ibc-relayer/config.toml#L164) the channels that the relayer will work with. You will want to configure your relayer to only process the interchain transactions submitted by your test contract. This can only be done after you have deployed your test contract (because you need to know the contract address); you can restart the relayer with updated configuration to make these settings effective. See the [documentation](https://docs.neutron.org/neutron/interchain-txs/overview#relaying) for more information.
 
-2. ICQ relayer setup [instruction](TODO).
+#### ICQ relayer setup 
+
+See the [instruction]([TODO](https://github.com/neutron-org/testnets/blob/main/quark/icq-relayer/README.md)).
 
 > Note: the ICQ rlayer allows you to [specify](TODO) the contract addresses that the relayer will work with. You will want to configure your relayer to only process the interchain queries submitted by your test contract. This can only be done after you have deployed your test contract (because you need to know the contract address); you can restart the relayer with updated configuration to make these settings effective. See the [documentation](https://docs.neutron.org/relaying/icq-relayer#relayer-application-settings) for more information.
 
