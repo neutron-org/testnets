@@ -88,3 +88,50 @@ Service status:
 Logs:
 
 `$ journalctl --unit=neutron-ibc-cosmoshub-relayer`
+
+## 9. Create connection between chains
+
+For Cosmos hub:
+
+```bash
+$ sudo su ibc-cosmoshub-rly
+$ hermes create connection --a-chain quark-1 --b-chain theta-testnet-001
+$ exit
+```
+
+For Juno:
+
+```
+$ sudo su ibc-juno-rly
+$ hermes create connection --a-chain quark-1 --b-chain uni-5
+$ exit
+```
+
+You will see a lot of output, but you are only interested in the `connection_id` on Neutron:
+
+```
+SUCCESS Connection {
+    delay_period: 0ns,
+    a_side: ConnectionSide {
+        chain: BaseChainHandle {
+            chain_id: ChainId {
+                id: "neutron-devnet-1",
+                version: 1,
+            },
+            runtime_sender: Sender { .. },
+        },
+        client_id: ClientId(
+            "07-tendermint-7",
+        ),
+        connection_id: Some(
+            ConnectionId(
+                "connection-7", <<< THIS CONNTECTION_ID
+            ),
+        ),
+    },
+```
+
+<aside>
+💡 Save the newly created neutron `connection_id`s somewhere — they are required to run the testing script.
+</aside>
+
