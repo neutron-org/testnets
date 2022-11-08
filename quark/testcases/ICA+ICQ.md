@@ -4,11 +4,11 @@
 
 This document contains the description of the ICA and ICQ test cases for the Quark testnet: ICA test cases are about executing an bunch of interchain transactions, and ICQ test cases are about registering a bunch of interchain queries & making sure that responses to those queries were submitted. Both ICA and ICQ test cases require deploying a smart contract on the Neutron chain, running a relayer (IBC and ICQ respectively) and interacting with the deployed contracts.
 
-To make everyone's life easier, Neutron team prepared a special [smart contract](https://github.com/neutron-org/neutron-contracts/tree/neutron_audit_oak_19_09_2022_fixes/contracts/neutron_validator_test) for the test cases, as well as a testing [script](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh) that goes through all the steps described in the test cases. This means that, ultimately, all you need to do is:
+To make everyone's life easier, Neutron team prepared a special [smart contract](https://github.com/neutron-org/neutron-contracts/tree/neutron_audit_oak_19_09_2022_fixes/contracts/neutron_validator_test) for the test cases, as well as a couple of testing testing scripts ([1]([https://github.com/neutron-org/neutron-contracts/tree/neutron_audit_oak_19_09_2022_fixes](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test_upload_contract.sh)), [2](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh)) that help you to go through all the steps described in the test cases. This means that, ultimately, all you need to do is:
 
 1. Set up your node,
 2. Set up two relayers (IBC and ICQ, see the instructions below),
-3. Follow (or simply run) the testing script,
+3. Run the testing script,
 4. Collect the output and paste in to the results [submission form](TODO).
 
 ## Getting ready
@@ -39,19 +39,26 @@ You don't have `junox` you can go through the following steps:
 
 This is done as one of the [steps](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh#L85) in the testing script.
 
+### Uploading the test contract
+
+You need to know the address of the test contract in order to configure ICA and ICQ relayers properly (so that they process only the messages related to that specific contract). In order to do that:
+
+1. Upload the contract instantiation [script](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test_upload_contract.sh) to your machine,
+2. Execute the script: `sh validator_test_upload_contract.sh`.
+
 ### Setting up the relayers
 
 #### IBC relayer
 
 See the [instruction](https://github.com/neutron-org/testnets/blob/main/quark/ibc-relayer/instruction.md).
 
-> Note: the IBC rlayer allows you to [specify](https://github.com/neutron-org/testnets/blob/9146e8c3f8d954798d478a822592888d7ff52e66/quark/ibc-relayer/config.toml#L164) the channels that the relayer will work with. You will want to configure your relayer to only process the interchain transactions submitted by your test contract. This can only be done after you have deployed your test contract (because you need to know the contract address); you can restart the relayer with updated configuration to make these settings effective. See the [documentation](https://docs.neutron.org/neutron/interchain-txs/overview#relaying) for more information.
+> Note: don't forget to [specify](https://github.com/neutron-org/testnets/blob/9146e8c3f8d954798d478a822592888d7ff52e66/quark/ibc-relayer/config.toml#L164) the channels that the relayer will work with using the contract address from the previous step. See the [documentation](https://docs.neutron.org/neutron/interchain-txs/overview#relaying) for more information.
 
 #### ICQ relayer setup 
 
-See the [instruction]([TODO](https://github.com/neutron-org/testnets/blob/main/quark/icq-relayer/README.md)).
+See the [instruction](https://github.com/neutron-org/testnets/blob/main/quark/icq-relayer/README.md).
 
-> Note: the ICQ rlayer allows you to [specify](TODO) the contract addresses that the relayer will work with. You will want to configure your relayer to only process the interchain queries submitted by your test contract. This can only be done after you have deployed your test contract (because you need to know the contract address); you can restart the relayer with updated configuration to make these settings effective. See the [documentation](https://docs.neutron.org/relaying/icq-relayer#relayer-application-settings) for more information.
+> Note: don't forget to [specify](TODO) the contract addresses that the relayer will work with using the contract address from the previous step. See the [documentation](https://docs.neutron.org/relaying/icq-relayer#relayer-application-settings) for more information.
 
 #### Create connection between chains
 
