@@ -4,11 +4,11 @@
 
 This document contains the description of the ICA and ICQ test cases for the Quark testnet: ICA test cases are about executing an bunch of interchain transactions, and ICQ test cases are about registering a bunch of interchain queries & making sure that responses to those queries were submitted. Both ICA and ICQ test cases require deploying a smart contract on the Neutron chain, running a relayer (IBC and ICQ respectively) and interacting with the deployed contracts.
 
-To make everyone's life easier, Neutron team prepared a special [smart contract](https://github.com/neutron-org/neutron-contracts/tree/neutron_audit_oak_19_09_2022_fixes/contracts/neutron_validator_test) for the test cases, as well as a testing [script](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh) that goes through all the steps described in the test cases. This means that, ultimately, all you need to do is:
+To make everyone's life easier, Neutron team prepared a special [smart contract](https://github.com/neutron-org/neutron-contracts/tree/neutron_audit_oak_19_09_2022_fixes/contracts/neutron_validator_test) for the test cases, as well as a couple of testing testing scripts ([1](https://github.com/neutron-org/neutron-contracts/tree/neutron_audit_oak_19_09_2022_fixes), [2](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh)) that help you to go through all the steps described in the test cases. This means that, ultimately, all you need to do is:
 
 1. Set up your node,
 2. Set up two relayers (IBC and ICQ, see the instructions below),
-3. Follow (or simply run) the testing script,
+3. Run the testing script,
 4. Collect the output and paste in to the results [submission form](TODO).
 
 ## Getting ready
@@ -43,7 +43,7 @@ This is done as one of the [steps](https://github.com/neutron-org/neutron-contra
 
 You need to know the address of the test contract in order to configure ICA and ICQ relayers properly (so that they process only the messages related to that specific contract). In order to do that:
 
-1. Upload the contract instantiation [script]([https://github.com/neutron-org/neutron-contracts/tree/neutron_audit_oak_19_09_2022_fixes](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test_upload_contract.sh) to your machine,
+1. Upload the contract instantiation [script](https://github.com/neutron-org/neutron-contracts/tree/neutron_audit_oak_19_09_2022_fixes)(https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test_upload_contract.sh) to your machine,
 2. Execute the script: `sh validator_test_upload_contract.sh`.
 
 ### Setting up the relayers
