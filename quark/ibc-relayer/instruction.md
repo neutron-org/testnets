@@ -107,7 +107,7 @@ $ hermes create connection --a-chain quark-1 --b-chain uni-5
 $ exit
 ```
 
-You will see a lot of output, but you are only interested in the `connection_id` on Neutron:
+You will see a lot of text, but you are only interested in the `connection_id` on Neutron at the end of the output:
 
 ```
 SUCCESS Connection {

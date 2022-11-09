@@ -41,11 +41,11 @@ wget https://raw.githubusercontent.com/neutron-org/testnets/main/quark/icq-relay
 
 Open this file in your text editor and fill in following variables (see the [documentation](https://docs.neutron.org/relaying/icq-relayer#configuration) for detailed description of the parameters):
 
-- RELAYER_NEUTRON_CHAIN_RPC_ADDR (e.g., `http://23.109.158.236:26657` — note `http://` and no trailing slash)
-- RELAYER_NEUTRON_CHAIN_REST_ADDR (e.g., `http://23.109.158.236:1317` — note `http://` and no trailing slash)
-- RELAYER_NEUTRON_CHAIN_HOME_DIR (e.g., `/path/to/home` — this is the path to keyring)
+- RELAYER_NEUTRON_CHAIN_RPC_ADDR (e.g., `http://23.109.158.236:26657` — note: don't use `tcp://` (use `http://` instead) and avoid trailing slash)
+- RELAYER_NEUTRON_CHAIN_REST_ADDR (e.g., `http://23.109.158.236:1317` — note: don't use `tcp://` (use `http://` instead) and avoid trailing slash)
+- RELAYER_NEUTRON_CHAIN_HOME_DIR (e.g., `/path/to/home` — a path to home directory, use the same path as one passed to neutrond with `--home` option when importing key in previous step)
 - RELAYER_NEUTRON_CHAIN_CONNECTION_ID
-- RELAYER_TARGET_CHAIN_RPC_ADDR (e.g., `http://164.90.146.43:26657` — note `http://` and no trailing slash)
+- RELAYER_TARGET_CHAIN_RPC_ADDR (e.g., `http://164.90.146.43:26657` — note: don't use `tcp://` (use `http://` instead) and avoid trailing slash)
 - RELAYER_REGISTRY_ADDRESSES
 - RELAYER_STORAGE_PATH (just some path — a new directory will be automatically created)
 

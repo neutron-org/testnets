@@ -137,4 +137,3 @@ They will need to already be in this [Discord](https://discord.gg/r82yeMu9Rf) fo
 ### What to do next
 
 After gentx is ready, please upload it to the https://github.com/neutron-org/testnets repository into `/quark/gentxs/` directory. Also please provide your peer and put it into  `/quark/peers/`, one peer per file.
-
