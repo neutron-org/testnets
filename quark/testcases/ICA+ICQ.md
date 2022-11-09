@@ -107,18 +107,18 @@ See the [instruction](https://github.com/neutron-org/testnets/blob/main/quark/ib
 
 See the [instruction](https://github.com/neutron-org/testnets/blob/main/quark/icq-relayer/README.md).
 
-> Note: don't forget to [specify](TODO) the contract addresses that the relayer will work with using the contract address from the previous step. See the [documentation](https://docs.neutron.org/relaying/icq-relayer#relayer-application-settings) for more information.
+> Note: don't forget to specify the contract address that the relayer will work with using the contract address from the [previous step](#uploading-the-test-contract). See the [documentation](https://docs.neutron.org/relaying/icq-relayer#relayer-application-settings) for more information. The configuration option you are looking for is `RELAYER_REGISTRY_ADDRESSES`.
 
-## Test cases [informational]
+## Test cases (informational)
 
 This section contains the desciption of the ICA and ICQ test cases. The *single* testing [script](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh) goes through all the steps in both the ICA and ICQ test cases, which you can check by reading the script. This section simply provides you with the description of the tasks.
 
 ### ICA
 
 1. Upload the testing contract [artifact](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/artifacts/neutron_validators_test.wasm),
-2. Execute an interchain transaction (send a [message](TODO) to the contract) that should return a successful ACK, share the tx links,
-3. Execute an interchain transaction (send a [message](TODO) to the contract) that should return an error ACK, share the tx links,
-4. Execute an interchain transaction (send a [message](TODO) to the contract) that should return an successful ACK that will be processed by the contract with an error, share the tx links.
+2. Execute an interchain transaction (send a [message](https://github.com/neutron-org/neutron-contracts/blob/0ba9a36c6d26166cc7051436ec21417031de1334/contracts/neutron_validator_test/src/msg.rs#L39-L45) to the contract) that should return a successful ACK, share the tx links,
+3. Execute an interchain transaction (send a [message](https://github.com/neutron-org/neutron-contracts/blob/0ba9a36c6d26166cc7051436ec21417031de1334/contracts/neutron_validator_test/src/msg.rs#L39-L45) to the contract) that should return an error ACK, share the tx links,
+4. Execute an interchain transaction (send a [message](https://github.com/neutron-org/neutron-contracts/blob/0ba9a36c6d26166cc7051436ec21417031de1334/contracts/neutron_validator_test/src/msg.rs#L39-L45) to the contract) that should return a successful ACK that will be processed by the contract with an error, share the tx links.
 
 > Note: when the ICA module executes an interchain transaction on the host chain, an IBC acknowledgement packet gets sent to the controller chain. This acknowledgement can either be a successful acknowledgement or an error acknowledgement. 
 
