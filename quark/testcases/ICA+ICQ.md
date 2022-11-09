@@ -108,7 +108,7 @@ See the [instruction](https://github.com/neutron-org/testnets/blob/main/quark/ib
 
 See the [instruction](https://github.com/neutron-org/testnets/blob/main/quark/icq-relayer/README.md).
 
-> Note: don't forget to [specify](TODO) the contract addresses that the relayer will work with using the contract address from the previous step. See the [documentation](https://docs.neutron.org/relaying/icq-relayer#relayer-application-settings) for more information.
+> Note: don't forget to specify the contract address that the relayer will work with using the contract address from the [previous step](#uploading-the-test-contract). See the [documentation](https://docs.neutron.org/relaying/icq-relayer#relayer-application-settings) for more information. The configuration option you are looking for is `RELAYER_REGISTRY_ADDRESSES`.
 
 ## Test cases [informational]
 
