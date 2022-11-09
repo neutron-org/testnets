@@ -16,7 +16,7 @@ To make everyone's life easier, Neutron team prepared a special [smart contract]
 
 ## Getting ready
 
-The testing script does not set up the IBC and ICQ relayers. You will need to set up both the IBC and the ICQ relayers prior to executing the script. In order to do that, you need to have some testnet tokens both on Neutron and on the target chain of your choice (we have instructions for Cosmos hub and Juno).
+None of the testing scripts sets up the IBC and ICQ relayers. You will need to set up both the IBC and the ICQ relayers prior to executing the scripts. In order to do that, you need to have some testnet tokens both on Neutron and on the target chain of your choice (we have instructions for Cosmos hub and Juno).
 
 ### Get the `neutrond` binary
 
