@@ -108,9 +108,9 @@ This section applies to those who are looking to join the testnet post genesis.
    $ neutrond keys show <key-name> -a
    ```
 
-3. Request tokens from faucet: **TBA**
+2. Request tokens from faucet: http://faucet.quark.ntrn.info
 
-4. Create validator
+3. Create validator
 
    ```shell
    $ neutrond tx staking create-validator \
