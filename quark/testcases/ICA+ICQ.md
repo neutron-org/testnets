@@ -8,10 +8,10 @@ Note
 
 To make everyone's life easier, Neutron team prepared a special [smart contract](https://github.com/neutron-org/neutron-contracts/tree/neutron_audit_oak_19_09_2022_fixes/contracts/neutron_validator_test) for the test cases, as well as a couple of testing scripts ([1](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test_upload_contract.sh), [2](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh)) that help you to go through all the steps described in the test cases. This means that, ultimately, all you need to do is:
 
-1. Set up your node,
-2. Upload the test contract,
-3. Set up two relayers (IBC and ICQ, see the instructions below),
-4. Run the testing script,
+1. Set up your node;
+2. [Upload the test contract](#uploading-the-test-contract);
+3. [Set up two relayers](#setting-up-the-relayers);
+4. [Run the testing script](#running-the-tasks);
 5. Collect the output and paste in to the results [submission form](TODO).
 
 ## Getting ready
