@@ -11,8 +11,9 @@ curl -s https://raw.githubusercontent.com/neutron-org/testnets/main/quark/genesi
 
 ```bash
 sha256sum ~/.neutrond/config/genesis.json
-# 357c4d33fad26c001d086c0705793768ef32c884a6ba4aa73237ab03dd0cc2b4
 ```
+
+it should be `357c4d33fad26c001d086c0705793768ef32c884a6ba4aa73237ab03dd0cc2b4`
 
 **get testnet version of neutron**
 
@@ -50,7 +51,7 @@ You can find more peers in the [peers](./peers/) directory.
 
 ## Running in production
 
-**Consider using [Cosmovisor](https://github.com/cosmos/cosmos-sdk/tree/master/cosmovisor) to make your life easier.**
+**Consider using [Cosmovisor](https://docs.cosmos.network/main/tooling/cosmovisor) to make your life easier.**
 
 Download Genesis file. Put it in your `/home/<user>/.neutrond/config` folder.
 
