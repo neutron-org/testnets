@@ -2,10 +2,9 @@
 
 **Genesis File**
 
-[Genesis File](/genesis.json):
 
 ```bash
-   curl -s https://github.com/neutron-org/testnets/raw/main/quark/genesis.json > ~/.neutrond/config/genesis.json
+curl -s https://raw.githubusercontent.com/neutron-org/testnets/main/quark/genesis.json > ~/.neutrond/config/genesis.json
 ```
 
 **Genesis sha256**
