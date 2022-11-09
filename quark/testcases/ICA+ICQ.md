@@ -112,7 +112,9 @@ See the [instruction](https://github.com/neutron-org/testnets/blob/main/quark/ic
 
 ## Test cases [informational]
 
-This section contains the desciption of the ICA and ICQ test cases. The *single* testing [script](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh) goes through all the steps in both the ICA and ICQ test cases, which you can check by reading the script. This section simply provides you with the description of the tasks.
+This section contains the desciption of the ICA and ICQ test cases. The *single* testing [script](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh) goes through all the steps in both the ICA and ICQ test cases, which you can check by reading the script. 
+
+> **Note: this section simply provides you with the description of the tasks, no actions are required here. You will go through all the steps in the next section by running the test script.**
 
 ### ICA
 
