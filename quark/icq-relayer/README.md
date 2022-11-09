@@ -19,7 +19,7 @@ This installs the relayer binary into your `$GOPATH/bin`. Make sure your `$GOPAT
 ```
 $ neutron_query_relayer version
 Version: 0.1.0
-Commit: 934ff75595858461bbc5eb300cff03c43f11f4ab
+Commit: 45dbb880177d7a22446a0754b53b85c48cfb9b00
 ```
 
 ## Install neutron
