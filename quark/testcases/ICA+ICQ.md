@@ -142,7 +142,7 @@ This section contains the desciption of the ICA and ICQ test cases. The *single*
 3. Follow the script instructions,
 4. Collect the output and paste in to the results [submission form](TODO).
 
-> NOTE: when prompted for a passphrase, use the same passphrase you used when uploading the contract.
+> NOTE: when prompted for a passphrase, use the same passphrase you used when uploading the test contract.
 
 > NOTE: if you see the message `Please send 0.02 atom to cosmosXXXXXXXXXXXX`, use the Keplr wallet to send the required amount to that address. You can check the delivery using a block explorer, e.g., https://explorer.theta-testnet.polypore.xyz/accounts/cosmos1c5gl8epk99jvz23dhnyp5et9rmm8wdq89v9hqnvt0pr74j5d2s7sjjxlp7
 
