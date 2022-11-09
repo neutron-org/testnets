@@ -4,6 +4,8 @@
 
 This document contains the description of the ICA and ICQ test cases for the Quark testnet: ICA test cases are about executing an bunch of interchain transactions, and ICQ test cases are about registering a bunch of interchain queries & making sure that responses to those queries were submitted. Both ICA and ICQ test cases require deploying a smart contract on the Neutron chain, running a relayer (IBC and ICQ respectively) and interacting with the deployed contracts.
 
+Note
+
 To make everyone's life easier, Neutron team prepared a special [smart contract](https://github.com/neutron-org/neutron-contracts/tree/neutron_audit_oak_19_09_2022_fixes/contracts/neutron_validator_test) for the test cases, as well as a couple of testing testing scripts ([1](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test_upload_contract.sh), [2](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh)) that help you to go through all the steps described in the test cases. This means that, ultimately, all you need to do is:
 
 1. Set up your node,
@@ -130,8 +132,7 @@ This section contains the desciption of the ICA and ICQ test cases. The *single*
 3. Register a kv query (send a [message](TODO) to the contract), and share tx hash,
 4. Wait until the relayer submits the responses, share the txs in a google form,
 5. Control contract address balance during query registration to register balance reduction for deposit (please read the deposits [documentation](https://docs.neutron.org/neutron/interchain-queries/overview#query-creation-deposit)),
-6. Delete **the tx query** (send a [message](TODO) to the contract) before the query submit timeout event, to collect the deposit to contract address,
-7. Delete **the kv query** using a 3rd party address (not the contract address) after query submit timeout event (send a [message](TODO) to the Interchain Queries module), to collect deposit to this, 3rd party address.
+6. Delete **the tx query** (send a [message](TODO) to the contract) before the query submit timeout event, to collect the deposit to contract address.
 
 ## Running the tasks
 
