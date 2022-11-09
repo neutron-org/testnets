@@ -26,24 +26,22 @@ See the [instructions](https://github.com/neutron-org/testnets/blob/main/quark/R
 
 Testnet tokens are required for the operation of the IBC relayer. **You will specify the address used in this section in `hermes` configuration as the address on the target chain of your choice.**
 
-> NOTE: https://jsfiddle.net might not be accessible from your location without VPN.
-
 #### Cosmos hub
 
 If you don't have `atom`s, then you can go through the following steps:
 
-- If you don't have Keplr [install it](https://www.keplr.app/),
-- If you don't have  CosmosHub testnet in your Keplr, go to this [Jsfiddle](https://jsfiddle.net/kht96uvo/1/), a `theta-testnet-001` network will be now available in Keplr,
-- Copy your CosmosHub testnet address (or generate a new one),
+- If you don't have Keplr [install it](https://www.keplr.app/);
+- If you don't have CosmosHub testnet in your Keplr, follow to the [Jsfiddle](https://jsfiddle.net/kht96uvo/1/), and a `theta-testnet-001` network will be now available in Keplr (Jsfiddle might not be accessible from your location without VPN);
+- Copy your CosmosHub testnet address (or generate a new one);
 - Go to [Faucet](https://discord.com/channels/669268347736686612/953697793476821092) channel in Discord and get your `atom`s (make sure that you are added to the sever first: https://discord.gg/cosmosnetwork).
 
 #### Juno
 
 You don't have `junox` you can go through the following steps:
 
-- If you don't have Keplr, [install it](https://www.keplr.app/),
-- If you don't have uni (Juno's testnet) in your Keplr, go to this [Jsfiddle](https://jsfiddle.net/superatik/L6bys84z/1/),
-- Copy your Uni address (or generate a new one),
+- If you don't have Keplr, [install it](https://www.keplr.app/);
+- If you don't have Juno testnet in your Keplr, follow to the [Jsfiddle](https://jsfiddle.net/superatik/L6bys84z/1/), and a `uni-5` network will be now available in Keplr (Jsfiddle might not be accessible from your location without VPN);
+- Copy your Uni address (or generate a new one);
 - Go to [Faucet](https://faucet.roguenet.io/) and get your `junox`.
 
 ### Generate the relayer address on Neutron and get testnet `$ntrn` tokens
