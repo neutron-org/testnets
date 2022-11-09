@@ -12,7 +12,7 @@ To make everyone's life easier, Neutron team prepared a special [smart contract]
 2. [Upload the test contract](#uploading-the-test-contract);
 3. [Set up two relayers](#setting-up-the-relayers);
 4. [Run the testing script](#running-the-tasks);
-5. Collect the output and paste in to the results [submission form](https://docs.google.com/forms/d/e/1FAIpQLScZGxOQ44_sY96e7IODGwG_qTRrVnrnJyI7vyRT8QN3cUSOwQ/viewform).
+5. Collect the output and paste in to the results [submission form](https://forms.gle/cyEdWfFTygkvcLEQ7).
 
 ## Getting ready
 
