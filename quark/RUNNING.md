@@ -2,10 +2,9 @@
 
 **Genesis File**
 
-[Genesis File](/genesis.json):
 
 ```bash
-   curl -s https://github.com/neutron-org/testnets/raw/main/quark/genesis.json > ~/.neutrond/config/genesis.json
+curl -s https://raw.githubusercontent.com/neutron-org/testnets/main/quark/genesis.json > ~/.neutrond/config/genesis.json
 ```
 
 **Genesis sha256**
@@ -108,9 +107,9 @@ This section applies to those who are looking to join the testnet post genesis.
    $ neutrond keys show <key-name> -a
    ```
 
-3. Request tokens from faucet: **TBA**
+2. Request tokens from faucet: http://faucet.quark.ntrn.info
 
-4. Create validator
+3. Create validator
 
    ```shell
    $ neutrond tx staking create-validator \
