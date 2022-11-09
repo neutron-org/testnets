@@ -110,7 +110,7 @@ See the [instruction](https://github.com/neutron-org/testnets/blob/main/quark/ib
 
 > Note: you will need the `connection_id` on Neutron (`a_side`) from this step later.
 
-> Note: you will need the mnemonic of `ibc-relayer` key from the [keys generation](#generate-the-relayers-address-on-neutron-and-get-testnet-ntrn-tokens) step.
+> Note: you will need the mnemonic of `ibc-relayer` key from the [keys generation](#generate-the-relayers-address-on-neutron-and-get-testnet-ntrn-tokens) step both for `NEUTRON_MNEMONIC` and `TARGET_CHAIN_MNEMONIC` parameters.
 
 #### ICQ relayer setup 
 
