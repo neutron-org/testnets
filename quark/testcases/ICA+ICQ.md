@@ -149,10 +149,14 @@ This section contains the desciption of the ICA and ICQ test cases. The *single*
 ### Test
 
 1. Upload the [testing script](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh) to your node,
-2. Run this script on your server: `bash validator_test.sh YOUR_CONNECTION_ID`, where `YOUR_CONNECTION_ID` is the connection identifier (Neutron side) that you saved after running the IBC relayer,
-3. Follow the script instructions,
-4. Collect the output and paste in to the results [submission form](https://docs.google.com/forms/d/e/1FAIpQLScZGxOQ44_sY96e7IODGwG_qTRrVnrnJyI7vyRT8QN3cUSOwQ/viewform),
-5. **PLEASE DON'T FORGET TO SAVE ALL SCRIPT OUTPUT IN A SEPARATE FILE; IT MIGHT BE REQUIRED FOR DEBUGGING.**
+2. Run this script on your server (`YOUR_CONNECTION_ID` is the connection identifier (Neutron side) that you saved after running the IBC relayer): 
+ 
+`NODE_URL=tcp://<your_node_host:port> bash validator_test.sh YOUR_CONNECTION_ID`
+
+
+5. Follow the script instructions,
+6. Collect the output and paste in to the results [submission form](https://docs.google.com/forms/d/e/1FAIpQLScZGxOQ44_sY96e7IODGwG_qTRrVnrnJyI7vyRT8QN3cUSOwQ/viewform),
+7. **PLEASE DON'T FORGET TO SAVE ALL SCRIPT OUTPUT IN A SEPARATE FILE; IT MIGHT BE REQUIRED FOR DEBUGGING.**
 
 > NOTE: when prompted for a passphrase, use the same passphrase you used when uploading the test contract.
 
