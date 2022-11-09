@@ -127,11 +127,11 @@ This section contains the desciption of the ICA and ICQ test cases. The *single*
 ### ICQ
 
 1. Upload the testing contract [artifact](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/artifacts/neutron_validators_test.wasm),
-2. Register a tx query (send a [message](TODO) to the contract), and share tx hash,
-3. Register a kv query (send a [message](TODO) to the contract), and share tx hash,
-4. Wait until the relayer submits the responses, share the txs in a google form,
-5. Control contract address balance during query registration to register balance reduction for deposit (please read the deposits [documentation](https://docs.neutron.org/neutron/interchain-queries/overview#query-creation-deposit)),
-6. Delete **the tx query** (send a [message](TODO) to the contract) before the query submit timeout event, to collect the deposit to contract address.
+2. Register a tx query (send a [message](https://github.com/neutron-org/neutron-contracts/blob/0ba9a36c6d26166cc7051436ec21417031de1334/contracts/neutron_validator_test/src/msg.rs#L66-L71) to the contract), and share tx hash,
+3. Register a kv query (send a [message](https://github.com/neutron-org/neutron-contracts/blob/0ba9a36c6d26166cc7051436ec21417031de1334/contracts/neutron_validator_test/src/msg.rs#L60-L65) to the contract), and share tx hash,
+4. Wait until the relayer submits the responses, share the txs in a Google form,
+5. Control contract address balance during query registration to register balance reduction for deposit (please read the [documentation](https://docs.neutron.org/neutron/interchain-queries/overview#query-creation-deposit) on deposits),
+6. Delete **the tx query** (send a [message](https://github.com/neutron-org/neutron-contracts/blob/0ba9a36c6d26166cc7051436ec21417031de1334/contracts/neutron_validator_test/src/msg.rs#L72-L74) to the contract) before the query submit timeout event, to collect the deposit to contract address.
 
 ## Running the tasks
 
