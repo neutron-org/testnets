@@ -125,8 +125,6 @@ This section contains the desciption of the ICA and ICQ test cases. The *single*
 
 > Note: when the ICA module executes an interchain transaction on the host chain, an IBC acknowledgement packet gets sent to the controller chain. This acknowledgement can either be a successful acknowledgement or an error acknowledgement. 
 
-> Note: when we say "share the tx links", we have two transactions in mind. The first one is executed by you, from your address, and sends a message to the test contract which triggers the interchain transaction execution. The second one is executed by your IBC relayer, and submits the IBC acknowledgement packet on Neutron. You can read more about Interchain Accounts module [here](https://ibc.cosmos.network/main/apps/interchain-accounts/overview.html), and you can read about Neutron's Interchain Transactions module (which uses the ICA module) [here](https://docs.neutron.org/neutron/interchain-txs/overview).
-
 ### ICQ
 
 1. Upload the testing contract [artifact](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/artifacts/neutron_validators_test.wasm),
