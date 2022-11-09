@@ -24,7 +24,7 @@ See the [instructions](https://github.com/neutron-org/testnets/blob/main/quark/R
 
 ### Getting testnet tokens on target chain
 
-Testnet tokens are required for the operation of the IBC relayer. **You will specify the address used in this section in `hermes` configuration as the address on the target chain of your choice.**
+Testnet tokens are required for the operation of the IBC relayer. **You will specify the address used in this section in [Hermes](#ibc-relayer) configuration as the address on the target chain of your choice.**
 
 > NOTE: the following guides on getting testnet tokens contain visiting the https://jsfiddle.net/. This resource might not be accessible from your location without VPN. 
 
@@ -48,7 +48,7 @@ You don't have `junox` you can go through the following steps:
 
 ### Generate the relayer address on Neutron and get testnet `$ntrn` tokens
 
-Testnet tokens are required for the operation of the IBC relayer. **You will specify the address used in this section in `hermes` configuration as the address on the Neutron chain.**
+Testnet tokens are required for the operation of the IBC relayer. **You will specify the address used in this section in [Hermes](#ibc-relayer) configuration as the address on the Neutron chain.**
 
 1. Go to the [Faucet](http://23.109.159.28/) and get tokens for your relayer address that is going to be used on the Neutron chain;
 2. Make sure tx is passed at the Neutron testnet explorer: http://23.109.159.28:3333/accounts/<your_relayer_address>.
