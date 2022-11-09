@@ -31,7 +31,7 @@ See the [instructions](https://github.com/neutron-org/testnets/blob/main/quark/R
 
 ICQ relayer must have an address on the Neutron chain, and this address must have some `$ntrn` testnet tokens on it. Check the [instruction](https://github.com/neutron-org/testnets/blob/main/quark/testcases/ICA+ICQ.md#generate-the-relayer-address-on-neutron-and-get-testnet-ntrn-tokens) on how to get testnet `$ntrn` tokens.
 
-Run `neutrond keys add my_wallet --recover --home /path/to/home --keyring-backend test` and input your mnemonic.
+Run `neutrond keys add my_wallet --recover --home $HOME --keyring-backend test` and input your mnemonic.
 
 Upload the template `.env` file to your machine:
 
