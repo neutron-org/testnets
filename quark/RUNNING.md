@@ -50,7 +50,7 @@ You can find more peers in the [peers](./peers/) directory.
 
 ## Running in production
 
-**Consider using [Cosmovisor](https://github.com/cosmos/cosmos-sdk/tree/master/cosmovisor) to make your life easier.**
+**Consider using [Cosmovisor](https://github.com/cosmos/cosmos-sdk/tree/main/tools/cosmovisor) to make your life easier.**
 
 Download Genesis file. Put it in your `/home/<user>/.neutrond/config` folder.
 
