@@ -59,7 +59,7 @@ Don't forget to generate your mnemonics for accounts and fill in in bash command
 ```
 $ sudo su ibc-cosmoshub-rly
 $ export NEUTRON_MNEMONIC="TODO"
-$ export TARGET_CHAIN_MNEMONIC="TODO" # e.g. Juno or Hub
+$ export TARGET_CHAIN_MNEMONIC="TODO" # might be the same as above
 $ export TARGET_CHAIN_ID="TODO" # e.g., theta-testnet-001 for Cosmos Hub testnet
 $ hermes keys add --chain quark-1 --mnemonic-file <(echo "$NEUTRON_MNEMONIC") --key-name neutron-ibc-relayer
 $ hermes keys add --chain $TARGET_CHAIN_ID --mnemonic-file <(echo "$TARGET_CHAIN_MNEMONIC") --key-name cosmoshub-ibc-relayer
