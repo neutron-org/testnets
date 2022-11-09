@@ -35,7 +35,9 @@ commit: a9e8ba5ebb9230bec97a4f2826d75a4e0e6130d9
 
 **Seed nodes**
 
+```
 e2c07e8e6e808fb36cca0fc580e31216772841df@seed-1.quark.ntrn.info:26656,c89b8316f006075ad6ae37349220dd56796b92fa@tenderseed.ccvalidators.com:29001
+```
 
 **Persistent Peers**
 
