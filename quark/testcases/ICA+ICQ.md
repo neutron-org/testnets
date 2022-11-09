@@ -33,7 +33,7 @@ Testnet tokens are required for the operation of the IBC relayer. **You will spe
 If you don't have `atom`s, then you can go through the following steps:
 
 - If you don't have Keplr [install it](https://www.keplr.app/);
-- If you don't have CosmosHub testnet in your Keplr, follow to the [Jsfiddle](https://jsfiddle.net/kht96uvo/1/), and a `theta-testnet-001` network will be now available in Keplr;
+- If you don't have CosmosHub testnet in your Keplr, follow to the [Jsfiddle](https://jsfiddle.net/kht96uvo/1/), and a `theta-testnet-001` network will become available in Keplr;
 - Copy your CosmosHub testnet address (or generate a new one);
 - Go to [Faucet](https://discord.com/channels/669268347736686612/953697793476821092) channel in Discord and get your `atom`s (make sure that you are added to the sever first: https://discord.gg/cosmosnetwork).
 
@@ -42,7 +42,7 @@ If you don't have `atom`s, then you can go through the following steps:
 You don't have `junox` you can go through the following steps:
 
 - If you don't have Keplr, [install it](https://www.keplr.app/);
-- If you don't have Juno testnet in your Keplr, follow to the [Jsfiddle](https://jsfiddle.net/superatik/L6bys84z/1/), and a `uni-5` network will be now available in Keplr;
+- If you don't have Juno testnet in your Keplr, follow to the [Jsfiddle](https://jsfiddle.net/superatik/L6bys84z/1/), and a `uni-5` network will become available in Keplr;
 - Copy your Uni address (or generate a new one);
 - Go to [Faucet](https://faucet.roguenet.io/) and get your `junox`.
 
