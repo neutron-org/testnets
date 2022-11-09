@@ -50,8 +50,8 @@ You don't have `junox` you can go through the following steps:
 
 Testnet tokens are required for the operation of the IBC relayer. **You will specify the address used in this section in `hermes` configuration as the address on the Neutron chain.**
 
-1. Go to the Faucet (http://23.109.159.28/) and get tokens for your relayer address that is going to be used on the Neutron chain;
-2. Make sure tx is passed by going to http://23.109.159.28:3333/accounts/<your_relayer_address>.
+1. Go to the [Faucet](http://23.109.159.28/) and get tokens for your relayer address that is going to be used on the Neutron chain;
+2. Make sure tx is passed at the Neutron testnet explorer: http://23.109.159.28:3333/accounts/<your_relayer_address>.
 
 ### Uploading the test contract
 
