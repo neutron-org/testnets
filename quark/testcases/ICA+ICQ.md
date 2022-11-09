@@ -44,13 +44,23 @@ You don't have `junox` you can go through the following steps:
 - Copy your Uni address (or generate a new one),
 - Go to [Faucet](https://faucet.roguenet.io/) and get your `junox`.
 
-### Generate the relayer address on Neutron and get testnet `$ntrn` tokens
+### Generate the relayer addresses on Neutron and get testnet `$ntrn` tokens
 
-Testnet tokens are required for the operation of the IBC relayer. **You will specify the address used in this section in `hermes` configuration as the address on the Neutron chain.**
+Testnet tokens are required for the operation of the IBC and ICQ relayers. **For IBC relayer, you will specify one of the the addresses used in this section in `hermes` configuration as the address on the Neutron chain. For ICQ relayer, you will specify the other address in the ICQ relayer config.**
 
+1. Create hermes key with the following command
+`neutrond key add ibc-key`
+1. Import the seed to Keplr to create Cosmos/Juno key from the same mnemonic
+2. Fund the `ibc-key` both on Neutron and Cosmos/Juno testnets
+3. Create the ICQ relayer key with the following command:
+`neutrond key add icq-key`
+4. Fund the `ibc-key` on Neutron testnet via faucet
+
+To fund Neutron addresses do the following:
 1. Go to the Faucet (http://23.109.159.28/) and get tokens for your relayer address that is going to be used on the Neutron chain,
 2. Make sure tx is passed by going to http://23.109.159.28:3333/accounts/<your_relayer_address>.
 
+To fund Cosmos/Juno addresses send the assets (1 ATOM or 1 JUNO should be enough) with your Keplr wallet from the address you funded via faucet.
 
 ### Uploading the test contract
 
