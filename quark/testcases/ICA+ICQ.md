@@ -20,7 +20,7 @@ None of the testing scripts sets up the IBC and ICQ relayers. You will need to s
 
 ### Get the `neutrond` binary
 
-See the [instructions](https://github.com/neutron-org/testnets/blob/main/quark/README.md#node-installation), or download a binary from the [releases](https://github.com/neutron-org/neutron/releases/tag/v0.1.0) page.
+See the [instructions](https://github.com/neutron-org/testnets/blob/main/quark/README.md#node-installation), or download a binary from the [releases](https://github.com/neutron-org/neutron/releases/latest) page.
 
 ### Getting testnet tokens on target chain
 
