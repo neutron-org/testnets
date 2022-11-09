@@ -138,7 +138,7 @@ This section contains the desciption of the ICA and ICQ test cases. The *single*
 ## Test
 
 1. Upload the [testing script](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh) to your node,
-2. Run this script on your server `bash validator_test.sh YOUR_CONNECTION_ID`,
+2. Run this script on your server: `bash validator_test.sh YOUR_CONNECTION_ID`, where `YOUR_CONNECTION_ID` is the connection identifier (Neutron side) that you saved after running the IBC relayer,
 3. Follow the script instructions,
 4. Collect the output and paste in to the results [submission form](TODO).
 
