@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2022-11-09T10:00:00.0Z",
+  "genesis_time": "2022-11-10T10:00:00.0Z",
   "chain_id": "quark-1",
   "initial_height": "1",
   "consensus_params": {
@@ -176,6 +176,31 @@
       "params": {
         "msg_submit_tx_max_messages": "16"
       }
+    },
+    "feerefunder": {
+      "params": {
+        "min_fee": {
+          "recv_fee": [
+            {
+              "denom": "untrn",
+              "amount": "1000"
+            }
+          ],
+          "ack_fee": [
+            {
+              "denom": "untrn",
+              "amount": "1000"
+            }
+          ],
+          "timeout_fee": [
+            {
+              "denom": "untrn",
+              "amount": "1000"
+            }
+          ]
+        }
+      },
+      "fee_infos": []
     },
     "mint": {
       "minter": {

@@ -23,11 +23,23 @@ First public Neutron testnet.
 | Rust               | > 1.63.0 |
 | Hermes IBC relayer | > 1.0    |
 
-> **PLEASE NOTE THAT WE ARE GOING TO USE v0.0.1 FOR GENTXS ONLY AND v0.1.0 (TO BE RELEASED SHORTLY) FOR THE ACTUAL TESTNET. SORRY FOR THE INCONVENIENCE.**
-
 ## Tools
 
-* Neutron Quark Blockchain Explorer
+* [Neutron Quark Blockchain Explorer](http://explorer.quark.ntrn.info)
+* [Neutron Quark Faucet](http://faucet.quark.ntrn.info)
+
+## Documentation
+
+1. [IBC relayer configuration](./ibc-relayer/instruction.md)
+2. [Neutron Query Relayer](./icq-relayer/README.md)
+
+## Testnet tasks
+
+We prepared list of tasks to complete during this testnet, there is two type of tasks: technical and social. You can find tasks and tasks descriptions on the following pages:
+1. [ICA+ICQ](./testcases/ICA%2BICQ.md)
+2. [Additional tasks](./testcases/Additional%20tasks.md)
+
+After completion of technical tasks, please fill [this form](https://forms.gle/cyEdWfFTygkvcLEQ7).
 
 ## Node installation
 
@@ -43,12 +55,13 @@ after installation please check installed version by running:
 
 `neutrond version --long`
 
-You should see something similar to the following:
+You should see the following:
 ```
-name: neutrond
+name: neutron
 server_name: neutrond
 version: 0.1.0
-commit: 01234567..89abcdef
+commit: a9e8ba5ebb9230bec97a4f2826d75a4e0e6130d9
+
 ``` 
 
 

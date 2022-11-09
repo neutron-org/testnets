@@ -100,7 +100,7 @@ See the [instruction](https://github.com/neutron-org/testnets/blob/main/quark/ib
 
 > Note: you should first start the relayer **without** specifying [the channel](https://github.com/neutron-org/testnets/blob/main/quark/ibc-relayer/config.toml#L163-L165) that the relayer will work with using the contract address from the previous step. You can add this config and restart the relayer **after** running the [testing script](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh) (see below) to make `hermes` only relay packets that are produced by your test contract. See the [documentation](https://docs.neutron.org/neutron/interchain-txs/overview#relaying) for more information.
 
-> Note: you will need the `connection_id` on Neutron side from this step later.
+> Note: you will need the `connection_id` on Neutron (`a_side`) from this step later.
 
 #### ICQ relayer setup 
 
@@ -110,7 +110,9 @@ See the [instruction](https://github.com/neutron-org/testnets/blob/main/quark/ic
 
 ## Test cases (informational)
 
-This section contains the desciption of the ICA and ICQ test cases. The *single* testing [script](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh) goes through all the steps in both the ICA and ICQ test cases, which you can check by reading the script. This section simply provides you with the description of the tasks.
+This section contains the desciption of the ICA and ICQ test cases. The *single* testing [script](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh) goes through all the steps in both the ICA and ICQ test cases, which you can check by reading the script. 
+
+> **Note: this section simply provides you with the description of the tasks, no actions are required here. You will go through all the steps in the next section by running the test script.**
 
 ### ICA
 
@@ -120,8 +122,6 @@ This section contains the desciption of the ICA and ICQ test cases. The *single*
 4. Execute an interchain transaction (send a [message](https://github.com/neutron-org/neutron-contracts/blob/0ba9a36c6d26166cc7051436ec21417031de1334/contracts/neutron_validator_test/src/msg.rs#L39-L45) to the contract) that should return a successful ACK that will be processed by the contract with an error, share the tx links.
 
 > Note: when the ICA module executes an interchain transaction on the host chain, an IBC acknowledgement packet gets sent to the controller chain. This acknowledgement can either be a successful acknowledgement or an error acknowledgement. 
-
-> Note: when we say "share the tx links", we have two transactions in mind. The first one is executed by you, from your address, and sends a message to the test contract which triggers the interchain transaction execution. The second one is executed by your IBC relayer, and submits the IBC acknowledgement packet on Neutron. You can read more about Interchain Accounts module [here](https://ibc.cosmos.network/main/apps/interchain-accounts/overview.html), and you can read about Neutron's Interchain Transactions module (which uses the ICA module) [here](https://docs.neutron.org/neutron/interchain-txs/overview).
 
 ### ICQ
 

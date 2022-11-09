@@ -112,7 +112,7 @@ You will see a lot of text, but you are only interested in the `connection_id` o
 ```
 SUCCESS Connection {
     delay_period: 0ns,
-    a_side: ConnectionSide {
+    a_side: ConnectionSide { <<< IMPORTANT: a_side
         chain: BaseChainHandle {
             chain_id: ChainId {
                 id: "neutron-devnet-1",
