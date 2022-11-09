@@ -18,7 +18,7 @@ First public Neutron testnet.
 
 | Name               | Version  |
 |--------------------|----------|
-| Neutron            | v0.0.1   |
+| Neutron            | v0.1.0   |
 | Go                 | > 1.18   |
 | Rust               | > 1.63.0 |
 | Hermes IBC relayer | > 1.0    |
@@ -34,7 +34,7 @@ First public Neutron testnet.
 Build and install neutron binary. 
 
 ```
-$ git clone -b v0.0.1 https://github.com/neutron-org/neutron.git
+$ git clone -b v0.1.0 https://github.com/neutron-org/neutron.git
 $ cd neutron
 $ make install
 ```
@@ -47,8 +47,8 @@ You should see something similar to the following:
 ```
 name: neutrond
 server_name: neutrond
-version: 0.0.1
-commit: 750ec1bfdc7831d2782e5d2109362a0874904cf6
+version: 0.1.0
+commit: 01234567..89abcdef
 ``` 
 
 
