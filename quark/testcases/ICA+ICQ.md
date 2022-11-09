@@ -57,23 +57,22 @@ Testnet tokens are required for the operation of the IBC relayer. **You will spe
 
 You need to know the address of the test contract in order to configure ICA and ICQ relayers properly (so that they process only the messages related to that specific contract). In order to do that:
 
-1. Upload the contract instantiation [script](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test_upload_contract.sh) to your machine,
+1. Upload the contract instantiation [script](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test_upload_contract.sh) to your machine;
 2. Upload the test contract [artifact](https://github.com/neutron-org/neutron-contracts/raw/neutron_audit_oak_19_09_2022_fixes/artifacts/neutron_validators_test.wasm) to your machine.
 
 After the script and the artifact are uploaded, execute the script (`NODE_URL` configures the node address; don't forget about the `tcp://` prefix!):
 
 ```
-$ NODE_URL=tcp://23.109.158.236:26657 bash validator_test_upload_contract.sh neutron_validators_test.wasm
-Node url: tcp://23.109.158.236:26657
-Chain id: neutron-devnet-1
+$ NODE_URL=tcp://<your_node_host:port> bash validator_test_upload_contract.sh neutron_validators_test.wasm
+Node url: tcp://<your_node_host:port>
+Chain id: quark-1
 Enter keyring passphrase: # here you enter the new password for your freshly created keyring
 Re-enter keyring passphrase:
-Local address in neutron: neutron1mljg6r7r2wzwpvm5fv************* # This is the address that was generated for you
-Key mnemonic: future kite hurry duck chat absorb curtain error render conduct tone model void start flag chronic brother comic spoil trim idle false siren nephew
-Key name: validator_test
+Local address in neutron: <neutron_address> # This is the address that was generated for you
+Key mnemonic: <mnemonic>
 
-Please go to http://23.109.159.28/ and get tokens for neutron1mljg6r7r2wzwpvm5fvcgt80nn9kevv2gp4sy2v # Here you are prompted to visit the Faucet address and get some testnet $ntrn tokens
-Make sure tx is passed by going to http://23.109.159.28:3333//accounts/neutron1mljg6r7r2wzwpvm5fvcgt80nn9kevv2gp4sy2v
+Please go to http://23.109.159.28/ and get tokens for <neutron_address> # Here you are prompted to visit the Faucet address and get some testnet $ntrn tokens
+Make sure tx is passed by going to http://23.109.159.28:3333//accounts/<neutron_address>
 Hit enter when ready
 
 Upload the queries contract
@@ -83,15 +82,15 @@ Contract code id: 10
 Instantiate the contract
 Enter keyring passphrase:
 gas estimate: 195479
-Contract address: neutron1hzz0s0ucrhdp6tue2lxk3c03nj6f60qy463we7lgx0wudd72ctmsw8xeng
+Contract address: <test_contract_address>
 ```
 This script:
-* Creates an address for you,
-* Prompts you to get testnet `$ntrn` tokens from the Faucet,
-* Uploads the contract code,
+* Creates a tmp address for you;
+* Prompts you to get testnet `$ntrn` tokens from the Faucet;
+* Uploads the contract code on behalf of the tmp address;
 * Instantiates the contract.
 
-The contract address, in this case `neutron1hzz0s0ucrhdp6tue2lxk3c03nj6f60qy463we7lgx0wudd72ctmsw8xeng`, is saved to `./contract_address.tmp`.
+The <test_contract_address> is saved to `./contract_address.tmp` just in case.
 
 ### Setting up the relayers
 
