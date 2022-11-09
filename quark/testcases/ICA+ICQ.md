@@ -4,6 +4,8 @@
 
 This document contains the description of the ICA and ICQ test cases for the Quark testnet: ICA test cases are about executing an bunch of interchain transactions, and ICQ test cases are about registering a bunch of interchain queries & making sure that responses to those queries were submitted. Both ICA and ICQ test cases require deploying a smart contract on the Neutron chain, running a relayer (IBC and ICQ respectively) and interacting with the deployed contracts.
 
+Note
+
 To make everyone's life easier, Neutron team prepared a special [smart contract](https://github.com/neutron-org/neutron-contracts/tree/neutron_audit_oak_19_09_2022_fixes/contracts/neutron_validator_test) for the test cases, as well as a couple of testing testing scripts ([1](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test_upload_contract.sh), [2](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh)) that help you to go through all the steps described in the test cases. This means that, ultimately, all you need to do is:
 
 1. Set up your node,
@@ -142,19 +144,19 @@ This section contains the desciption of the ICA and ICQ test cases. The *single*
 3. Register a kv query (send a [message](TODO) to the contract), and share tx hash,
 4. Wait until the relayer submits the responses, share the txs in a google form,
 5. Control contract address balance during query registration to register balance reduction for deposit (please read the deposits [documentation](https://docs.neutron.org/neutron/interchain-queries/overview#query-creation-deposit)),
-6. Delete **the tx query** (send a [message](TODO) to the contract) before the query submit timeout event, to collect the deposit to contract address,
-7. Delete **the kv query** using a 3rd party address (not the contract address) after query submit timeout event (send a [message](TODO) to the Interchain Queries module), to collect deposit to this, 3rd party address.
+6. Delete **the tx query** (send a [message](TODO) to the contract) before the query submit timeout event, to collect the deposit to contract address.
 
 ## Running the tasks
 
 ## Test
 
 1. Upload the [testing script](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh) to your node,
-2. Run this script on your server `bash validator_test.sh YOUR_CONNECTION_ID`,
+2. Run this script on your server: `bash validator_test.sh YOUR_CONNECTION_ID`, where `YOUR_CONNECTION_ID` is the connection identifier (Neutron side) that you saved after running the IBC relayer,
 3. Follow the script instructions,
-4. Collect the output and paste in to the results [submission form](TODO).
+4. Collect the output and paste in to the results [submission form](TODO),
+5. **PLEASE DON'T FORGET TO SAVE ALL SCRIPT OUTPUT IN A SEPARATE FILE; IT MIGHT BE REQUIRED FOR DEBUGGING.**
 
-> NOTE: when prompted for a passphrase, use the same passphrase you used when uploading the contract.
+> NOTE: when prompted for a passphrase, use the same passphrase you used when uploading the test contract.
 
 > NOTE: if you see the message `Please send 0.02 atom to cosmosXXXXXXXXXXXX`, use the Keplr wallet to send the required amount to that address. You can check the delivery using a block explorer, e.g., https://explorer.theta-testnet.polypore.xyz/accounts/cosmos1c5gl8epk99jvz23dhnyp5et9rmm8wdq89v9hqnvt0pr74j5d2s7sjjxlp7
 
