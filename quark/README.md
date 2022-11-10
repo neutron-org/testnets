@@ -10,31 +10,43 @@ First public Neutron testnet.
 
 ### Hardware
 
-* 8 Cores
-* 64 GB RAM
-* 2x960 GB SSD
+* 4 Cores
+* 32 GB RAM
+* 2x512 GB SSD
 
 ### Software Versions
 
 | Name               | Version  |
 |--------------------|----------|
-| Neutron            | v0.0.1   |
+| Neutron            | v0.1.0   |
 | Go                 | > 1.18   |
 | Rust               | > 1.63.0 |
 | Hermes IBC relayer | > 1.0    |
 
-> **PLEASE NOTE THAT WE ARE GOING TO USE v0.0.1 FOR GENTXS ONLY AND v0.1.0 (TO BE RELEASED SHORTLY) FOR THE ACTUAL TESTNET. SORRY FOR THE INCONVENIENCE.**
-
 ## Tools
 
-* Neutron Quark Blockchain Explorer
+* [Neutron Quark Blockchain Explorer](http://explorer.quark.ntrn.info)
+* [Neutron Quark Faucet](http://faucet.quark.ntrn.info)
+
+## Documentation
+
+1. [IBC relayer configuration](./ibc-relayer/instruction.md)
+2. [Neutron Query Relayer](./icq-relayer/README.md)
+
+## Testnet tasks
+
+We prepared list of tasks to complete during this testnet, there is two type of tasks: technical and social. You can find tasks and tasks descriptions on the following pages:
+1. [ICA+ICQ](./testcases/ICA%2BICQ.md)
+2. [Additional tasks](./testcases/Additional%20tasks.md)
+
+After completion of technical tasks, please fill [this form](https://forms.gle/cyEdWfFTygkvcLEQ7).
 
 ## Node installation
 
 Build and install neutron binary. 
 
 ```
-$ git clone -b v0.0.1 git@github.com:neutron-org/neutron.git
+$ git clone -b v0.1.0 https://github.com/neutron-org/neutron.git
 $ cd neutron
 $ make install
 ```
@@ -43,12 +55,13 @@ after installation please check installed version by running:
 
 `neutrond version --long`
 
-You should see something similar to the following:
+You should see the following:
 ```
-name: neutrond
+name: neutron
 server_name: neutrond
-version: 0.0.1
-commit: 750ec1bfdc7831d2782e5d2109362a0874904cf6
+version: 0.1.0
+commit: a9e8ba5ebb9230bec97a4f2826d75a4e0e6130d9
+
 ``` 
 
 
@@ -107,6 +120,20 @@ neutrond gentx <key-name> 1000000000untrn --output-document=gentx.json \
   --keyring-backend <os | file>
 ```
 
+### Fill pull request description
+
+To make the onboarding process simpler, please fill the description of your PR with the following data: <br/>
+- Your validator's moniker
+- Your webpage and/or active twitter page of your organization
+- Each of your teammate's Discord handles <br/>
+They will need to already be in this [Discord](https://discord.gg/r82yeMu9Rf) for us to give them the right roles! <br/>
+- Your Neutronvaloper address
+
+### Example of filled description field in gentx+peers PR
+
+![Скриншот 03-11-2022 204428 1](https://user-images.githubusercontent.com/92199696/199796600-73f34a6f-c75c-4443-a598-21a50c067f91.png)
+<br/>
+
 ### What to do next
 
-After gentx is ready please upload it to the https://github.com/neutron-org/testnets repository into `/quark/gentxs/` directory. Also please provide your peer and put it into  `/quark/peers/`, one peer per file.
+After gentx is ready, please upload it to the https://github.com/neutron-org/testnets repository into `/quark/gentxs/` directory. Also please provide your peer and put it into  `/quark/peers/`, one peer per file.
