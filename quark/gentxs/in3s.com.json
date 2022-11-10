@@ -28,7 +28,7 @@
         }
       }
     ],
-    "memo": "",
+    "memo": "70bcf3a24ada5d9414dda4ba32bdc6616d880e26@192.168.1.1:26656",
     "timeout_height": "0",
     "extension_options": [],
     "non_critical_extension_options": []
@@ -61,6 +61,6 @@
     }
   },
   "signatures": [
-    "SjZsQUzjTJGaPUm7lgeSNVJiZr8dRr2LVrMlDSoLC4lWGiOrbZ8zRJjjpr4DDH6Ys5T/EMbWhw3UqsQxt3+W2g=="
+    "k3YDiyT8we+PTOUwTgJqElfkMiAHB7F4YOgQDsXd/NE/62ZxPSSqZHFmSNDSPDl58lkDhXOqRHsQXTEJnPRJGg=="
   ]
 }
