@@ -1,10 +1,9 @@
 # Signing Testcases
 
-## 1. Standard “software” signing
-Description
-## 2. Hardware signing (tmkms)
-Description
-## 3. Horcrux: https://github.com/strangelove-ventures/horcrux
-Description
-## 4. Test Multisig addresses
-Description
+*Important Note: We'll publish submission form for this task ASAP* <br/>
+## 1. Hardware signing (tmkms)
+> If possible try to use tmkms as KMS/HSM for block signing
+## 2. Horcrux: https://github.com/strangelove-ventures/horcrux
+> Try to use horcurx as signing service
+## 3. Test Multisig addresses
+> Try to make different multisig address and send coins from and to it. (https://jake-hartnell.medium.com/cosmos-sdk-multisigs-96a390a9d3cc)
