@@ -7,12 +7,12 @@ This tutorial is for connecting with cosmoshub testnet network (theta-testnet-00
 ## 1. Install Hermes v1.0.0
 
 ```
-$ PLATFORM=`uname -a | awk '{print $(NF-1)}'`
-$ curl -L "https://github.com/informalsystems/ibc-rs/releases/download/v1.0.0/hermes-v1.0.0-${PLATFORM}-unknown-linux-gnu.tar.gz" > hermes.tar.gz && \
-    mkdir -p $HOME/.hermes/bin && \
+curl -L "https://github.com/informalsystems/ibc-rs/releases/download/v1.0.0/hermes-v1.0.0-${PLATFORM}-unknown-linux-gnu.tar.gz" > hermes.tar.gz && \
     tar -C ./ -vxzf hermes.tar.gz && \
     rm -f hermes.tar.gz  && \
-    mv ./hermes /usr/local/bin/
+    sudo mv ./hermes /usr/local/bin/ && \
+    sudo chgrp root /usr/local/bin/hermes && \
+    sudo chown root /usr/local/bin/hermes
 ```
 
 Check that it works and version is ok (Should be `hermes 1.0.0+ed4dd8c`)
