@@ -4,14 +4,16 @@ This repository contains information about Neutron testnets.
 
 ## Quark Testnet
 
-## RPC nodes
+> **NOTE: some of the links (faucet, explorer, etc.) may not work yet as we are still setting up the services. Please stay tuned.**
+
+### RPC nodes
 
 | Validator | RPC endpoint                        | GRPC endpoint                        | REST endpoint                       |
 |-----------|-------------------------------------|--------------------------------------|-------------------------------------|
 | Neutron   | https://rpc.quark.ntrn.info         | https://grpc.quark.ntrn.info         | https://rest.quark.ntrn.info        |
 | NodeStake | https://rpc-t.neutron.nodestake.top | https://grpc-t.neutron.nodestake.top | https://api-t.neutron.nodestake.top |
 
-## Snapshots service
+### Snapshots service
 
 All snapshots for Quark-1 tesnet are available at: https://snapshot.quark.ntrn.info
 Use `wget -O - https://snapshot.quark.ntrn.info/<snapshot name> | lz4 -d | tar -xvf -` command in order to download and unpack snapshot.
