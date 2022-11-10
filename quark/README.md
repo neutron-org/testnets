@@ -129,6 +129,8 @@ To make the onboarding process simpler, please fill the description of your PR w
 They will need to already be in this [Discord](https://discord.gg/r82yeMu9Rf) for us to give them the right roles! <br/>
 - Your Neutronvaloper address
 
+And please enter [Discord](https://discord.gg/r82yeMu9Rf) then will be able to give you a validator-role
+
 ### Example of filled description field in gentx+peers PR
 
 ![Скриншот 03-11-2022 204428 1](https://user-images.githubusercontent.com/92199696/199796600-73f34a6f-c75c-4443-a598-21a50c067f91.png)
