@@ -51,7 +51,7 @@ https://explorer.nodestake.top/neutron-testnet
 1. https://docs.neutron.org/
 2. [IBC relayer configuration](https://github.com/neutron-org/testnets/blob/main/quark/ibc-relayer/instruction.md)
 3. [Neutron Query Relayer](https://github.com/neutron-org/testnets/blob/main/quark/icq-relayer/README.md)
-4. [GenTxs submission](./quark/README.md](https://github.com/neutron-org/testnets/blob/main/quark/README.md)
+4. [GenTxs submission](https://github.com/neutron-org/testnets/blob/main/quark/README.md)
 5. [Running quark testnet node](https://github.com/neutron-org/testnets/blob/main/quark/README.md)
 6. [ICA+ICQ tasks](https://github.com/neutron-org/testnets/blob/main/quark/testcases/ICA%2BICQ.md)
 7. [Additional tasks](https://github.com/neutron-org/testnets/blob/main/quark/testcases/Additional%20tasks.md)
