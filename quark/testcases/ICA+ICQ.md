@@ -34,8 +34,8 @@ Neutron testnet tokens are required for the operation of the IBC and ICQ relayer
 
 and save the mnemonics;
 
-2. Go to the [Faucet](http://23.109.159.28/) and get tokens for the addresses you generated on previous step;
-3. Make sure tx is passed at the Neutron testnet explorer: http://23.109.159.28:3333/accounts/<your_relayer_address>.
+2. Go to the [Faucet](http://faucet.quark.ntrn.info/) and get tokens for the addresses you generated on previous step;
+3. Make sure tx is passed at the Neutron testnet explorer: http://explorer.quark.ntrn.info/accounts/<your_relayer_address>.
 
 ### Getting testnet tokens on target chain
 
@@ -79,8 +79,8 @@ Re-enter keyring passphrase:
 Local address in neutron: <neutron_address> # This is the address that was generated for you
 Key mnemonic: <mnemonic>
 
-Please go to http://23.109.159.28/ and get tokens for <neutron_address> # Here you are prompted to visit the Faucet address and get some testnet $ntrn tokens
-Make sure tx is passed by going to http://23.109.159.28:3333//accounts/<neutron_address>
+Please go to http://faucet.quark.ntrn.info/ and get tokens for <neutron_address> # Here you are prompted to visit the Faucet address and get some testnet $ntrn tokens
+Make sure tx is passed by going to http://explorer.quark.ntrn.info/accounts/<neutron_address>
 Hit enter when ready
 
 Upload the queries contract
