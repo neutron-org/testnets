@@ -155,7 +155,7 @@ This section contains the desciption of the ICA and ICQ test cases. The *single*
 
 
 3. Follow the script instructions,
-4. Collect the output and paste in to the results [submission form](https://docs.google.com/forms/d/e/1FAIpQLScZGxOQ44_sY96e7IODGwG_qTRrVnrnJyI7vyRT8QN3cUSOwQ/viewform),
+4. Collect the output and paste in to the results [submission form](https://forms.gle/cyEdWfFTygkvcLEQ7),
 5. **PLEASE DON'T FORGET TO SAVE ALL SCRIPT OUTPUT IN A SEPARATE FILE; IT MIGHT BE REQUIRED FOR DEBUGGING.**
 
 > NOTE: when prompted for a passphrase, use the same passphrase you used when uploading the test contract.
