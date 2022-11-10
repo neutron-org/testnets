@@ -53,5 +53,5 @@ https://explorer.nodestake.top/neutron-testnet
 3. [Neutron Query Relayer](./icq-relayer/README.md)
 4. [GenTxs submission](./quark/README.md)
 5. [Running quark testnet node](./quark/RUNNING.md)
-6. [ICA+ICQ tasks](./testnets/quark/testcases/ICA%2BICQ.md)
+6. [ICA+ICQ tasks](./testnets/quark/testcases/ICA+ICQ.md)
 7. [Additional tasks](./testcases/Additional%20tasks.md)
