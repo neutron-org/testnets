@@ -69,7 +69,7 @@ Description=Neutrond daemon
 After=network-online.target
 
 [Service]
-User=juno
+User=<YOUR_USERNAME>
 ExecStart=/home/<YOUR_USERNAME>/go/bin/neutrond start
 Restart=on-failure
 RestartSec=3
