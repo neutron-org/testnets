@@ -9,6 +9,7 @@ This repository contains information about Neutron testnets.
 | Validator | RPC endpoint                | GRPC endpoint                | REST endpoint                |
 |-----------|-----------------------------|------------------------------|------------------------------|
 | Neutron   | https://rpc.quark.ntrn.info | https://grpc.quark.ntrn.info | https://rest.quark.ntrn.info |
+| NodeStake | https://rpc-t.nodestake.top | https://grpc-t.nodestake.top | https://api-t.nodestake.top  |
 
 ## Snapshots service
 
@@ -39,8 +40,8 @@ http://faucet.quark.ntrn.info
 
 ### Block explorer
 
-http://explorer.quark.ntrn.info)
-
+http://explorer.quark.ntrn.info
+https://explorer.nodestake.top/neutron-testnet
 
 ### Documentation & tutorials
 
