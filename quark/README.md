@@ -39,8 +39,6 @@ We prepared list of tasks to complete during this testnet, there is two type of 
 1. [ICA+ICQ](./testcases/ICA%2BICQ.md)
 2. [Additional tasks](./testcases/Additional%20tasks.md)
 
-After completion of technical tasks, please fill [this form](https://forms.gle/cyEdWfFTygkvcLEQ7).
-
 ## Node installation
 
 Build and install neutron binary. 

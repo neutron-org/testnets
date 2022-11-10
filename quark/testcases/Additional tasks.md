@@ -1,7 +1,20 @@
 # Additional tasks 
 
-## For validators
-*These tasks aren't mandatory, but they will be appreciated! They should be considered as examples of useful contributions, don't be scared of using your own creativity!*
+*These tasks aren't mandatory, but they will be appreciated! They should be considered as examples of useful contributions, don't be scared of being creative*
+
+Additional Tasks come in two flavours:
+
+    Technical contributions (creating explorers, bots, public nodes, installers, etc.)
+    Social contributions (tweets and threads, articles and videos, infographics etc.)
+
+To make your life easier, we've made public some of our best visuals, as well as our logo, primary colors, etc. You can find them here: https://github.com/neutron-org/brandbook
+
+Additional tasks can be submitted via dedicated channels in the Quark Testnet category:
+
+    #tasks-social: for tweets, videos, articles, infographics, etc.
+    #tasks-technical: for bots, explorers, installers, analytics, public nodes, etc.
+
+Once you click on the channel, you will see a collection of posts, each one with a topic. Simply click on the right topic and share you contribution in the comment with a link.
 
 ## Feel free to use this [brandbook](https://drive.google.com/drive/folders/1bIUQ4-ejI7OX8zhYWZRy2nCgPGbQj6F7) with visual assets, colors and logos in your work!
 
@@ -40,9 +53,7 @@
 ### 10. *Run Neutron on different platforms (darwin, linux, arm, etc.)* <br/>
 > Let's check how it will work! 
 
-## For developers
-*These tasks aren't mandatory, but they will be appreciated! They should be considered as examples of useful contributions, don't be scared of using your own creativity!*
-
+### 11. *Deploy a dApp on Neutron* 
 You could try to run apps and tools which generally used on smart-contract platforms such as:
 - DEX
 - Lending

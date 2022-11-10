@@ -4,13 +4,16 @@ This repository contains information about Neutron testnets.
 
 ## Quark Testnet
 
-## RPC nodes
+> **NOTE: some of the links (faucet, explorer, etc.) may not work yet as we are still setting up the services. Please stay tuned.**
 
-| Validator | RPC endpoint                | GRPC endpoint                | REST endpoint                |
-|-----------|-----------------------------|------------------------------|------------------------------|
-| Neutron   | https://rpc.quark.ntrn.info | https://grpc.quark.ntrn.info | https://rest.quark.ntrn.info |
+### RPC nodes
 
-## Snapshots service
+| Validator | RPC endpoint                        | GRPC endpoint                        | REST endpoint                       |
+|-----------|-------------------------------------|--------------------------------------|-------------------------------------|
+| Neutron   | https://rpc.quark.ntrn.info         | https://grpc.quark.ntrn.info         | https://rest.quark.ntrn.info        |
+| NodeStake | https://rpc-t.neutron.nodestake.top | https://grpc-t.neutron.nodestake.top | https://api-t.neutron.nodestake.top |
+
+### Snapshots service
 
 All snapshots for Quark-1 tesnet are available at: https://snapshot.quark.ntrn.info
 Use `wget -O - https://snapshot.quark.ntrn.info/<snapshot name> | lz4 -d | tar -xvf -` command in order to download and unpack snapshot.
@@ -39,15 +42,16 @@ http://faucet.quark.ntrn.info
 
 ### Block explorer
 
-http://explorer.quark.ntrn.info)
+http://explorer.quark.ntrn.info
 
+https://explorer.nodestake.top/neutron-testnet
 
 ### Documentation & tutorials
 
 1. https://docs.neutron.org/
-2. [IBC relayer configuration](./ibc-relayer/instruction.md)
-3. [Neutron Query Relayer](./icq-relayer/README.md)
-4. [GenTxs submission](./quark/README.md)
-5. [Running quark testnet node](./quark/RUNNING.md)
-6. [ICA+ICQ tasks](./testcases/ICA%2BICQ.md)
-7. [Additional tasks](./testcases/Additional%20tasks.md)
+2. [IBC relayer configuration](https://github.com/neutron-org/testnets/blob/main/quark/ibc-relayer/instruction.md)
+3. [Neutron Query Relayer](https://github.com/neutron-org/testnets/blob/main/quark/icq-relayer/README.md)
+4. [GenTxs submission](https://github.com/neutron-org/testnets/blob/main/quark/README.md)
+5. [Running quark testnet node](https://github.com/neutron-org/testnets/blob/main/quark/README.md)
+6. [ICA+ICQ tasks](https://github.com/neutron-org/testnets/blob/main/quark/testcases/ICA%2BICQ.md)
+7. [Additional tasks](https://github.com/neutron-org/testnets/blob/main/quark/testcases/Additional%20tasks.md)
