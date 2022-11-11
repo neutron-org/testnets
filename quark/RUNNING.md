@@ -18,7 +18,7 @@ it should be `357c4d33fad26c001d086c0705793768ef32c884a6ba4aa73237ab03dd0cc2b4`
 **get testnet version of neutron**
 
 ```
-$ git clone -b v0.1.0 https://github.com/neutron-org/neutron.git
+$ git clone -b v0.1.1 https://github.com/neutron-org/neutron.git
 $ cd neutron
 $ make install
 ```
@@ -29,7 +29,7 @@ $ make install
 $ neutrond version --long
 name: neutron
 server_name: neutrond
-version: 0.1.0
+version: 0.1.1
 commit: a9e8ba5ebb9230bec97a4f2826d75a4e0e6130d9
 
 ```

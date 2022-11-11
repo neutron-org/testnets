@@ -6,10 +6,10 @@
 
 ## Install relayer
 
-> Note: if you don't want to build the relayer, you can get the binaries from the [releases](https://github.com/neutron-org/neutron-query-relayer/releases/tag/v0.1.0) page.
+> Note: if you don't want to build the relayer, you can get the binaries from the [releases](https://github.com/neutron-org/neutron-query-relayer/releases/tag/v0.1.1) page.
 
 ```
-$ git clone -b v0.1.0 https://github.com/neutron-org/neutron-query-relayer.git
+$ git clone -b v0.1.1 https://github.com/neutron-org/neutron-query-relayer.git
 $ cd neutron-query-relayer
 $ make install
 ```
@@ -18,13 +18,13 @@ This installs the relayer binary into your `$GOPATH/bin`. Make sure your `$GOPAT
 
 ```
 $ neutron_query_relayer version
-Version: 0.1.0
+Version: 0.1.1
 Commit: 934ff75595858461bbc5eb300cff03c43f11f4ab
 ```
 
 ## Install neutron
 
-See the [instructions](https://github.com/neutron-org/testnets/blob/main/quark/README.md#node-installation), or download a binary from the [releases](https://github.com/neutron-org/neutron/releases/tag/v0.1.0) page.
+See the [instructions](https://github.com/neutron-org/testnets/blob/main/quark/README.md#node-installation), or download a binary from the [releases](https://github.com/neutron-org/neutron/releases/tag/v0.1.1) page.
 
 
 ## Configuration
