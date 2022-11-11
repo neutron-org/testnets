@@ -18,7 +18,7 @@ First public Neutron testnet.
 
 | Name               | Version  |
 |--------------------|----------|
-| Neutron            | v0.1.0   |
+| Neutron            | v0.1.1   |
 | Go                 | > 1.18   |
 | Rust               | > 1.63.0 |
 | Hermes IBC relayer | > 1.0    |
@@ -39,14 +39,12 @@ We prepared list of tasks to complete during this testnet, there is two type of 
 1. [ICA+ICQ](./testcases/ICA%2BICQ.md)
 2. [Additional tasks](./testcases/Additional%20tasks.md)
 
-After completion of technical tasks, please fill [this form](https://forms.gle/cyEdWfFTygkvcLEQ7).
-
 ## Node installation
 
 Build and install neutron binary. 
 
 ```
-$ git clone -b v0.1.0 https://github.com/neutron-org/neutron.git
+$ git clone -b v0.1.1 https://github.com/neutron-org/neutron.git
 $ cd neutron
 $ make install
 ```
@@ -59,7 +57,7 @@ You should see the following:
 ```
 name: neutron
 server_name: neutrond
-version: 0.1.0
+version: 0.1.1
 commit: a9e8ba5ebb9230bec97a4f2826d75a4e0e6130d9
 
 ``` 
@@ -128,6 +126,8 @@ To make the onboarding process simpler, please fill the description of your PR w
 - Each of your teammate's Discord handles <br/>
 They will need to already be in this [Discord](https://discord.gg/r82yeMu9Rf) for us to give them the right roles! <br/>
 - Your Neutronvaloper address
+
+And please enter [Discord](https://discord.gg/r82yeMu9Rf) then will be able to give you a validator-role
 
 ### Example of filled description field in gentx+peers PR
 

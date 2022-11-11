@@ -7,12 +7,12 @@ This tutorial is for connecting with cosmoshub testnet network (theta-testnet-00
 ## 1. Install Hermes v1.0.0
 
 ```
-$ PLATFORM=`uname -a | awk '{print $(NF-1)}'`
-$ curl -L "https://github.com/informalsystems/ibc-rs/releases/download/v1.0.0/hermes-v1.0.0-${PLATFORM}-unknown-linux-gnu.tar.gz" > hermes.tar.gz && \
-    mkdir -p $HOME/.hermes/bin && \
+curl -L "https://github.com/informalsystems/ibc-rs/releases/download/v1.0.0/hermes-v1.0.0-${PLATFORM}-unknown-linux-gnu.tar.gz" > hermes.tar.gz && \
     tar -C ./ -vxzf hermes.tar.gz && \
     rm -f hermes.tar.gz  && \
-    mv ./hermes /usr/local/bin/
+    sudo mv ./hermes /usr/local/bin/ && \
+    sudo chgrp root /usr/local/bin/hermes && \
+    sudo chown root /usr/local/bin/hermes
 ```
 
 Check that it works and version is ok (Should be `hermes 1.0.0+ed4dd8c`)
@@ -23,7 +23,8 @@ Check that it works and version is ok (Should be `hermes 1.0.0+ed4dd8c`)
 
 ```
 $ sudo useradd -m ibc-cosmoshub-rly
-$ sudo su ibc-cosmoshub-rly && cd ~/
+$ sudo su ibc-cosmoshub-rly
+$ cd ~/
 $ mkdir ~/.hermes
 ```
 
@@ -48,7 +49,9 @@ WantedBy=multi-user.target
 
 Copy the example [config](https://github.com/neutron-org/testnets/blob/main/quark/ibc-relayer/config.toml) into `~/.hermes/config.toml` **and fill the missing parameters.**
 
-Don't forget to fill in the missing parameters (marked by TODO comments). Check that config is valid:
+Don't forget to fill in the missing parameters (marked by TODO comments).
+
+Check that config is valid:
 
 `$ hermes health-check`
 
@@ -60,9 +63,10 @@ Don't forget to generate your mnemonics for accounts and fill in in bash command
 $ sudo su ibc-cosmoshub-rly
 $ export NEUTRON_MNEMONIC="TODO"
 $ export TARGET_CHAIN_MNEMONIC="TODO"
-$ export TARGET_CHAIN_ID="TODO" # e.g., theta-testnet-001 for Cosmos Hub testnet
+$ export TARGET_CHAIN_ID="TODO" # e.g., "theta-testnet-001" for Cosmos Hub testnet or "uni-5" for Juno testnet 
+$ export TARGET_KEY_NAME="TODO" # e.g. "cosmoshub-ibc-relayer" or "juno-ibc-relayer" (matches key-name in config.toml)
 $ hermes keys add --chain quark-1 --mnemonic-file <(echo "$NEUTRON_MNEMONIC") --key-name neutron-ibc-relayer
-$ hermes keys add --chain $TARGET_CHAIN_ID --mnemonic-file <(echo "$TARGET_CHAIN_MNEMONIC") --key-name cosmoshub-ibc-relayer
+$ hermes keys add --chain $TARGET_CHAIN_ID --mnemonic-file <(echo "$TARGET_CHAIN_MNEMONIC") --key-name $TARGET_KEY_NAME
 ```
 
 ## 6. Check funds
