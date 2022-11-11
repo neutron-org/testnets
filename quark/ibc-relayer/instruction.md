@@ -48,7 +48,9 @@ WantedBy=multi-user.target
 
 Copy the example [config](https://github.com/neutron-org/testnets/blob/main/quark/ibc-relayer/config.toml) into `~/.hermes/config.toml` **and fill the missing parameters.**
 
-Don't forget to fill in the missing parameters (marked by TODO comments). Check that config is valid:
+Don't forget to fill in the missing parameters (marked by TODO comments).
+
+Check that config is valid:
 
 `$ hermes health-check`
 
