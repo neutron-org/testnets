@@ -22,11 +22,26 @@ None of the testing scripts sets up the IBC and ICQ relayers. You will need to s
 
 See the [instructions](https://github.com/neutron-org/testnets/blob/main/quark/README.md#node-installation), or download a binary from the [releases](https://github.com/neutron-org/neutron/releases/latest) page.
 
+### Generate the relayers' address on Neutron and get testnet `$ntrn` tokens
+
+Neutron testnet tokens are required for the operation of the IBC and ICQ relayers. **You will specify the addresses used in this section in [Hermes](#ibc-relayer) and [ICQ Relayer](#icq-relayer-setup) configuration as the address on the Neutron chain.**
+
+1. Generate keys with following commands:
+
+`neutrond keys add ibc-relayer`
+
+`neutrond keys add icq-relayer`
+
+and save the mnemonics;
+
+2. Go to the [Faucet](http://faucet.quark.ntrn.info/) and get tokens for the addresses you generated on previous step;
+3. Make sure tx is passed at the Neutron testnet explorer: http://explorer.quark.ntrn.info/accounts/<your_relayer_address>.
+
 ### Getting testnet tokens on target chain
 
 Testnet tokens are required for the operation of the IBC relayer. **You will specify the address used in this section in [Hermes](#ibc-relayer) configuration as the address on the target chain of your choice.**
 
-> NOTE: the following guides on getting testnet tokens contain visiting the https://jsfiddle.net/. This resource might not be accessible from your location without VPN. 
+> NOTE: the following guides on getting testnet tokens contain visiting the https://jsfiddle.net/. This resource might not be accessible from your location without VPN.
 
 #### Cosmos hub
 
@@ -34,7 +49,7 @@ If you don't have `atom`s, then you can go through the following steps:
 
 - If you don't have Keplr [install it](https://www.keplr.app/);
 - If you don't have CosmosHub testnet in your Keplr, follow to the [Jsfiddle](https://jsfiddle.net/kht96uvo/1/), and a `theta-testnet-001` network will become available in Keplr;
-- Copy your CosmosHub testnet address (or generate a new one);
+- For simplicity, you can re-use the mnemonic of `ibc-relayer` key (Keplr -> Add Account -> Import existing account);
 - Go to [Faucet](https://discord.com/channels/669268347736686612/953697793476821092) channel in Discord and get your `atom`s (make sure that you are added to the sever first: https://discord.gg/cosmosnetwork).
 
 #### Juno
@@ -43,15 +58,8 @@ You don't have `junox` you can go through the following steps:
 
 - If you don't have Keplr, [install it](https://www.keplr.app/);
 - If you don't have Juno testnet in your Keplr, follow to the [Jsfiddle](https://jsfiddle.net/superatik/L6bys84z/1/), and a `uni-5` network will become available in Keplr;
-- Copy your Uni address (or generate a new one);
+- For simplicity, you can re-use the mnemonic of `ibc-relayer` key (Keplr -> Add Account -> Import existing account);
 - Go to [Faucet](https://faucet.roguenet.io/) and get your `junox`.
-
-### Generate the relayer address on Neutron and get testnet `$ntrn` tokens
-
-Testnet tokens are required for the operation of the IBC relayer. **You will specify the address used in this section in [Hermes](#ibc-relayer) configuration as the address on the Neutron chain.**
-
-1. Go to the [Faucet](http://23.109.159.28/) and get tokens for your relayer address that is going to be used on the Neutron chain;
-2. Make sure tx is passed at the Neutron testnet explorer: http://23.109.159.28:3333/accounts/<your_relayer_address>.
 
 ### Uploading the test contract
 
@@ -71,8 +79,8 @@ Re-enter keyring passphrase:
 Local address in neutron: <neutron_address> # This is the address that was generated for you
 Key mnemonic: <mnemonic>
 
-Please go to http://23.109.159.28/ and get tokens for <neutron_address> # Here you are prompted to visit the Faucet address and get some testnet $ntrn tokens
-Make sure tx is passed by going to http://23.109.159.28:3333//accounts/<neutron_address>
+Please go to http://faucet.quark.ntrn.info/ and get tokens for <neutron_address> # Here you are prompted to visit the Faucet address and get some testnet $ntrn tokens
+Make sure tx is passed by going to http://explorer.quark.ntrn.info/accounts/<neutron_address>
 Hit enter when ready
 
 Upload the queries contract
@@ -102,11 +110,15 @@ See the [instruction](https://github.com/neutron-org/testnets/blob/main/quark/ib
 
 > Note: you will need the `connection_id` on Neutron (`a_side`) from this step later.
 
+> Note: you will need the mnemonic of `ibc-relayer` key from the [keys generation](#generate-the-relayers-address-on-neutron-and-get-testnet-ntrn-tokens) step both for `NEUTRON_MNEMONIC` and `TARGET_CHAIN_MNEMONIC` parameters.
+
 #### ICQ relayer setup 
 
 See the [instruction](https://github.com/neutron-org/testnets/blob/main/quark/icq-relayer/README.md).
 
 > Note: don't forget to specify the contract address that the relayer will work with using the contract address from the [previous step](#uploading-the-test-contract). See the [documentation](https://docs.neutron.org/relaying/icq-relayer#relayer-application-settings) for more information. The configuration option you are looking for is `RELAYER_REGISTRY_ADDRESSES`.
+
+> Note: you will need the mnemonic of `icq-relayer` key from the [keys generation](#generate-the-relayers-address-on-neutron-and-get-testnet-ntrn-tokens) step.
 
 ## Test cases (informational)
 
@@ -137,9 +149,13 @@ This section contains the desciption of the ICA and ICQ test cases. The *single*
 ### Test
 
 1. Upload the [testing script](https://github.com/neutron-org/neutron-contracts/blob/neutron_audit_oak_19_09_2022_fixes/validator_test.sh) to your node,
-2. Run this script on your server: `bash validator_test.sh YOUR_CONNECTION_ID`, where `YOUR_CONNECTION_ID` is the connection identifier (Neutron side) that you saved after running the IBC relayer,
+2. Run this script on your server (`YOUR_CONNECTION_ID` is the connection identifier (Neutron side) that you saved after running the IBC relayer): 
+ 
+`NODE_URL=tcp://<your_node_host:port> bash validator_test.sh YOUR_CONNECTION_ID`
+
+
 3. Follow the script instructions,
-4. Collect the output and paste in to the results [submission form](https://docs.google.com/forms/d/e/1FAIpQLScZGxOQ44_sY96e7IODGwG_qTRrVnrnJyI7vyRT8QN3cUSOwQ/viewform),
+4. Collect the output and paste in to the results [submission form](https://forms.gle/cyEdWfFTygkvcLEQ7),
 5. **PLEASE DON'T FORGET TO SAVE ALL SCRIPT OUTPUT IN A SEPARATE FILE; IT MIGHT BE REQUIRED FOR DEBUGGING.**
 
 > NOTE: when prompted for a passphrase, use the same passphrase you used when uploading the test contract.
