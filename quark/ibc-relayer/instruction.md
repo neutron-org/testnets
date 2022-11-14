@@ -51,6 +51,8 @@ Copy the example [config](https://github.com/neutron-org/testnets/blob/main/quar
 
 Don't forget to fill in the missing parameters (marked by TODO comments).
 
+NOTE: `websocket_addr` must start with ws|wss protocol
+
 Check that config is valid:
 
 `$ hermes health-check`
