@@ -12,7 +12,8 @@ This repository contains information about Neutron testnets.
 |-----------|-------------------------------------|--------------------------------------|-------------------------------------|
 | Neutron   | https://rpc.quark.ntrn.info         | https://grpc.quark.ntrn.info         | https://rest.quark.ntrn.info        |
 | NodeStake | https://rpc-t.neutron.nodestake.top | https://grpc-t.neutron.nodestake.top | https://api-t.neutron.nodestake.top |
-| Nodejumper | https://neutron-testnet.nodejumper.io:443 | https://neutron-testnet.nodejumper.io:9090 | https://neutron-testnet.nodejumper.io:1317 |
+| Nodejumper| https://neutron-testnet.nodejumper.io:443 | https://neutron-testnet.nodejumper.io:9090 | https://neutron-testnet.nodejumper.io:1317 |
+| Cabinet42 | https://neutron-rpc.42cabi.net      | https://neutron-grpc.42cabi.net      | https://neutron-api.42cabi.net      |
 
 ### Snapshots service
 
