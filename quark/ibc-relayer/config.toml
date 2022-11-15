@@ -102,7 +102,7 @@ key_name = 'neutron-ibc-relayer'
 store_prefix = 'ibc'
 default_gas = 5000000
 max_gas = 15000000
-gas_price = { price = 0.002, denom = 'untrn' }
+gas_price = { price = 0.004, denom = 'untrn' }
 gas_multiplier = 1.1
 max_msg_num = 30
 max_tx_size = 2097152
@@ -160,7 +160,8 @@ address_type = { derivation = 'cosmos' }
 policy = 'allow'
 list = [
     # allow relaying only for channels created by a certain contract  
-    # TODO: fill in your INTERCHAIN_TXS_CONTRACT_ADDRESS below
+    # TODO: fill in your INTERCHAIN_TXS_CONTRACT_ADDRESS below AFTER you run the test script (not the updload contract script,
+    # the test script) and restart the relayer.
     # will be something like `['icacontroller-neutron14hj2tavq8fpesdwxxcu44rty3hh90vhujrvcmstl4zr3txmfvw9s5c2epq*', '*'],`
-    [TODO, '*'],
+    ['*', '*'],
 ]

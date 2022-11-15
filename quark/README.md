@@ -18,23 +18,33 @@ First public Neutron testnet.
 
 | Name               | Version  |
 |--------------------|----------|
-| Neutron            | v0.0.1   |
+| Neutron            | v0.1.1   |
 | Go                 | > 1.18   |
 | Rust               | > 1.63.0 |
 | Hermes IBC relayer | > 1.0    |
 
-> **PLEASE NOTE THAT WE ARE GOING TO USE v0.0.1 FOR GENTXS ONLY AND v0.1.0 (TO BE RELEASED SHORTLY) FOR THE ACTUAL TESTNET. SORRY FOR THE INCONVENIENCE.**
-
 ## Tools
 
-* Neutron Quark Blockchain Explorer
+* [Neutron Quark Blockchain Explorer](http://explorer.quark.ntrn.info)
+* [Neutron Quark Faucet](http://faucet.quark.ntrn.info)
+
+## Documentation
+
+1. [IBC relayer configuration](./ibc-relayer/instruction.md)
+2. [Neutron Query Relayer](./icq-relayer/README.md)
+
+## Testnet tasks
+
+We prepared list of tasks to complete during this testnet, there is two type of tasks: technical and social. You can find tasks and tasks descriptions on the following pages:
+1. [ICA+ICQ](./testcases/ICA%2BICQ.md)
+2. [Additional tasks](./testcases/Additional%20tasks.md)
 
 ## Node installation
 
 Build and install neutron binary. 
 
 ```
-$ git clone -b v0.0.1 git@github.com:neutron-org/neutron.git
+$ git clone -b v0.1.1 https://github.com/neutron-org/neutron.git
 $ cd neutron
 $ make install
 ```
@@ -43,12 +53,13 @@ after installation please check installed version by running:
 
 `neutrond version --long`
 
-You should see something similar to the following:
+You should see the following:
 ```
-name: neutrond
+name: neutron
 server_name: neutrond
-version: 0.0.1
-commit: 750ec1bfdc7831d2782e5d2109362a0874904cf6
+version: 0.1.1
+commit: a9e8ba5ebb9230bec97a4f2826d75a4e0e6130d9
+
 ``` 
 
 
@@ -115,6 +126,8 @@ To make the onboarding process simpler, please fill the description of your PR w
 - Each of your teammate's Discord handles <br/>
 They will need to already be in this [Discord](https://discord.gg/r82yeMu9Rf) for us to give them the right roles! <br/>
 - Your Neutronvaloper address
+
+And please enter [Discord](https://discord.gg/r82yeMu9Rf) then will be able to give you a validator-role
 
 ### Example of filled description field in gentx+peers PR
 
