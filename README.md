@@ -14,6 +14,7 @@ This repository contains information about Neutron testnets.
 | NodeStake | https://rpc-t.neutron.nodestake.top | https://grpc-t.neutron.nodestake.top | https://api-t.neutron.nodestake.top |
 | Nodejumper| https://neutron-testnet.nodejumper.io:443 | https://neutron-testnet.nodejumper.io:9090 | https://neutron-testnet.nodejumper.io:1317 |
 | Cabinet42 | https://neutron-rpc.42cabi.net      | https://neutron-grpc.42cabi.net      | https://neutron-api.42cabi.net      |
+| MMS       | https://rpc-testnet-quark-1.mms.team| https://grpc-testnet-quark-1.mms.team| https://api-testnet-quark-1.mms.team|
 
 ### Snapshots service
 
@@ -47,6 +48,8 @@ http://faucet.quark.ntrn.info
 http://explorer.quark.ntrn.info
 
 https://explorer.nodestake.top/neutron-testnet
+
+https://t-explorer.mms.team/neutron
 
 ### Documentation & tutorials
 
