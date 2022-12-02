@@ -1,3 +1,5 @@
+> **NOTE: Testnet is completed. Please subscribe to our [Twitter](https://twitter.com/Neutron_org) for news.**
+
 # Neutron Testnet quark-1
 
 First public Neutron testnet.
