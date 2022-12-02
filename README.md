@@ -4,7 +4,7 @@ This repository contains information about Neutron testnets.
 
 ## Quark Testnet
 
-> **NOTE: Testnet is completed. Please subscribe to our [Twitter](https://twitter.com/Neutron_org) for news updates.**
+> **NOTE: Testnet is completed. Please subscribe to our [Twitter](https://twitter.com/Neutron_org) for news.**
 
 ### RPC nodes
 
