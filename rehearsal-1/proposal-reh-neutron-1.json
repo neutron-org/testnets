@@ -1,13 +1,13 @@
 {
-    "title": "Neutron reh-neutron-1 Chain",
-    "description": "# Launching the reh-neutron-1 Chain",
-    "chain_id": "reh-neutron-1",
+    "title": "Neutron test-1 Chain",
+    "description": "# Launching the test-1 Chain",
+    "chain_id": "test-1",
     "initial_height": {
         "revision_height": 1,
         "revision_number": 1
     },
-    "genesis_hash": "ca0b10dcf187a8fbf936a7df212106136e96b1918f60be3bc658e0e77135fb9a",
-    "binary_hash": "16a5fe8860b8c15eb11057b622e8749704c18d0e1dedae2e100ab397e732a708",
+    "genesis_hash": "e818864599c2a08e7bfe1054e8ce64e8149b1aaa4cd6e8d4b613600a2d01d8ba",
+    "binary_hash": "198ffd0cbe1c64980fca90d3bb30fdedfa7bd3ee35debec0485a0772118d6128",
     "spawn_time": "2023-04-05T15:00:00.000000Z",
     "blocks_per_distribution_transmission": 1000,
     "consumer_redistribution_fraction": "0.75",
