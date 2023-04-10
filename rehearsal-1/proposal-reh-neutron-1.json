@@ -1,14 +1,14 @@
 {
-    "title": "Neutron test-1 Chain",
-    "description": "# Launching the test-1 Chain",
-    "chain_id": "neutron-test-1",
+    "title": "Neutron neutron-test-2 Chain",
+    "description": "# Launching the neutron-test-2 Chain",
+    "chain_id": "neutron-test-2",
     "initial_height": {
         "revision_height": 1,
         "revision_number": 1
     },
-    "genesis_hash": "413443e88c0fab7b0dabc9aedf7cc3f08a5d33cc62ddfb0445cea2fe38aec41d",
+    "genesis_hash": "3f8ef0c1ac0708faafe2b013c8c9dd220c978b5d4c646b568f6ab26c2987ef75",
     "binary_hash": "198ffd0cbe1c64980fca90d3bb30fdedfa7bd3ee35debec0485a0772118d6128",
-    "spawn_time": "2023-04-10T13:12:00Z",
+    "spawn_time": "2023-04-10T16:25:00Z",
     "blocks_per_distribution_transmission": 1000,
     "consumer_redistribution_fraction": "0.75",
     "historical_entries": 10000,
