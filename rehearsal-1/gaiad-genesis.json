@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2023-04-05T11:00:0Z",
+  "genesis_time": "2023-04-10T10:00:0Z",
   "chain_id": "rehearsal-1",
   "initial_height": "1",
   "consensus_params": {

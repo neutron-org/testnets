@@ -6,9 +6,9 @@
         "revision_height": 1,
         "revision_number": 1
     },
-    "genesis_hash": "e818864599c2a08e7bfe1054e8ce64e8149b1aaa4cd6e8d4b613600a2d01d8ba",
+    "genesis_hash": "815bf9dadeb7535c90f2f97f396138ea0ae3a218dee566afe81ae19c92789818",
     "binary_hash": "198ffd0cbe1c64980fca90d3bb30fdedfa7bd3ee35debec0485a0772118d6128",
-    "spawn_time": "2023-04-05T15:00:00.000000Z",
+    "spawn_time": "2023-04-10T11:52:00Z",
     "blocks_per_distribution_transmission": 1000,
     "consumer_redistribution_fraction": "0.75",
     "historical_entries": 10000,
