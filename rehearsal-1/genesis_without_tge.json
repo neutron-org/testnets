@@ -23,7 +23,10 @@
   "app_hash": "",
   "app_state": {
     "adminmodule": {
-      "admins": ["neutron1yyca08xqdgvjz0psg56z67ejh9xms6l436u8y58m82npdqqhmmtqxfjftn"]
+      "admins": [
+        "neutron1yyca08xqdgvjz0psg56z67ejh9xms6l436u8y58m82npdqqhmmtqxfjftn",
+        "neutron1m9l358xunhhwds0568za49mzhvuxx9ux8xafx2"
+      ]
     },
     "auth": {
       "params": {
