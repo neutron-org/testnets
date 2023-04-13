@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2023-04-13T15:07:44.586384Z",
+  "genesis_time": "2023-04-13T15:24:23.712035Z",
   "chain_id": "neutron-rehearsal-fix-1",
   "initial_height": "1",
   "consensus_params": {
@@ -207,7 +207,7 @@
     },
     "ccvconsumer": {
       "params": {
-        "enabled": false,
+        "enabled": true,
         "blocks_per_distribution_transmission": "1000",
         "distribution_transmission_channel": "",
         "provider_fee_pool_addr_str": "",
@@ -215,15 +215,98 @@
         "transfer_timeout_period": "3600s",
         "consumer_redistribution_fraction": "0.75",
         "historical_entries": "10000",
-        "unbonding_period": "1728000s"
+        "unbonding_period": "1728000s",
+        "soft_opt_out_threshold": "0.05"
       },
       "provider_client_id": "",
       "provider_channel_id": "",
-      "new_chain": false,
-      "provider_client_state": null,
-      "provider_consensus_state": null,
+      "new_chain": true,
+      "provider_client_state": {
+        "chain_id": "neutrond",
+        "trust_level": {
+          "numerator": "1",
+          "denominator": "3"
+        },
+        "trusting_period": "1140480s",
+        "unbonding_period": "1728000s",
+        "max_clock_drift": "10s",
+        "frozen_height": {
+          "revision_number": "0",
+          "revision_height": "0"
+        },
+        "latest_height": {
+          "revision_number": "0",
+          "revision_height": "1"
+        },
+        "proof_specs": [
+          {
+            "leaf_spec": {
+              "hash": "SHA256",
+              "prehash_key": "NO_HASH",
+              "prehash_value": "SHA256",
+              "length": "VAR_PROTO",
+              "prefix": "AA=="
+            },
+            "inner_spec": {
+              "child_order": [
+                0,
+                1
+              ],
+              "child_size": 33,
+              "min_prefix_length": 4,
+              "max_prefix_length": 12,
+              "empty_child": null,
+              "hash": "SHA256"
+            },
+            "max_depth": 0,
+            "min_depth": 0
+          },
+          {
+            "leaf_spec": {
+              "hash": "SHA256",
+              "prehash_key": "NO_HASH",
+              "prehash_value": "SHA256",
+              "length": "VAR_PROTO",
+              "prefix": "AA=="
+            },
+            "inner_spec": {
+              "child_order": [
+                0,
+                1
+              ],
+              "child_size": 32,
+              "min_prefix_length": 1,
+              "max_prefix_length": 1,
+              "empty_child": null,
+              "hash": "SHA256"
+            },
+            "max_depth": 0,
+            "min_depth": 0
+          }
+        ],
+        "upgrade_path": [
+          "upgrade",
+          "upgradedIBCState"
+        ],
+        "allow_update_after_expiry": true,
+        "allow_update_after_misbehaviour": true
+      },
+      "provider_consensus_state": {
+        "timestamp": "2023-04-13T15:24:26.498023Z",
+        "root": {
+          "hash": "ZHVtbXk="
+        },
+        "next_validators_hash": "4679411ABF26ACA0B34A9B92062E7E63D9BDC960134E65F4658CE04D9B919627"
+      },
       "maturing_packets": [],
-      "initial_val_set": [],
+      "initial_val_set": [
+        {
+          "pub_key": {
+            "ed25519": "wlLS8tKX3+mlcGiiM5Y6HqOg3i1S+nPRvDQg999tWLU="
+          },
+          "power": "100"
+        }
+      ],
       "height_to_valset_update_id": [],
       "outstanding_downtime_slashing": [],
       "pending_consumer_packets": {
@@ -231,7 +314,8 @@
       },
       "last_transmission_block_height": {
         "height": "0"
-      }
+      },
+      "preCCV": false
     },
     "contractmanager": {
       "params": {},
