@@ -1,0 +1,2 @@
+Gaiad chain: rehearsal-1
+Neutron: neutron-test-1
