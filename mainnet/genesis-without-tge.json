@@ -1,6 +1,6 @@
 {
   "genesis_time": "2023-04-21T17:07:54.035493Z",
-  "chain_id": "test-1",
+  "chain_id": "neutronX-1",
   "initial_height": "1",
   "consensus_params": {
     "block": {
