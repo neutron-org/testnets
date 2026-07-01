@@ -1,5 +1,16 @@
 # Neutron Testnets
 
+# ⚠️ Project Status: Archived & Maintenance Mode
+
+The neutron repository has been officially archived and placed into long-term maintenance mode. 
+
+* **Security Updates**: The development team is no longer actively monitoring this codebase or tracking security vulnerabilities. 
+* **Future Development**: The community is highly encouraged to fork this repository to implement custom improvements, bug fixes, or continued development.
+
+Thank you to everyone who contributed to the project!
+
+## Overview
+
 This repository contains information about Neutron testnets.
 
 ## Quark Testnet
